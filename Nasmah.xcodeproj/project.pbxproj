@@ -8,21 +8,43 @@
 
 /* Begin PBXBuildFile section */
 		BA86B3042FD353790061B10A /* NasmahApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA86B3032FD353790061B10A /* NasmahApp.swift */; };
-		BA86B3062FD353790061B10A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA86B3052FD353790061B10A /* ContentView.swift */; };
 		BA86B3082FD3537A0061B10A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA86B3072FD3537A0061B10A /* Assets.xcassets */; };
 		BA86B30B2FD3537A0061B10A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA86B30A2FD3537A0061B10A /* Preview Assets.xcassets */; };
-		BA86B30D2FD3537A0061B10A /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA86B30C2FD3537A0061B10A /* Persistence.swift */; };
-		BA86B3102FD3537A0061B10A /* Nasmah.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BA86B30E2FD3537A0061B10A /* Nasmah.xcdatamodeld */; };
+		BA86B3252FD3561A0061B10A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA86B3242FD3561A0061B10A /* HomeView.swift */; };
+		BA86B32F2FD357130061B10A /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA86B32E2FD357130061B10A /* test.swift */; };
+		BA86B3332FD357350061B10A /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA86B3322FD357350061B10A /* File.swift */; };
+		BA86B3472FD35A9A0061B10A /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA86B3462FD35A9A0061B10A /* Persistence.swift */; };
+		BA86B34A2FD35AC80061B10A /* Nasmah.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BA86B3482FD35AC80061B10A /* Nasmah.xcdatamodeld */; };
+		BA86B34C2FD35B520061B10A /* File1.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA86B34B2FD35B520061B10A /* File1.swift */; };
+		BA86B34E2FD35B680061B10A /* File2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA86B34D2FD35B680061B10A /* File2.swift */; };
+		BA86B3502FD35B7A0061B10A /* File3.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA86B34F2FD35B7A0061B10A /* File3.swift */; };
+		BA86B3522FD35B8B0061B10A /* File4.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA86B3512FD35B8B0061B10A /* File4.swift */; };
+		BA86B3542FD35B9C0061B10A /* File5.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA86B3532FD35B9C0061B10A /* File5.swift */; };
+		BA86B3562FD35BB00061B10A /* File6.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA86B3552FD35BB00061B10A /* File6.swift */; };
+		BA86B3582FD35BBF0061B10A /* File7.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA86B3572FD35BBF0061B10A /* File7.swift */; };
+		BA86B35A2FD35BD80061B10A /* File8.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA86B3592FD35BD80061B10A /* File8.swift */; };
+		BA86B35C2FD35BF60061B10A /* File9.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA86B35B2FD35BF60061B10A /* File9.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BA86B3002FD353790061B10A /* Nasmah.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nasmah.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA86B3032FD353790061B10A /* NasmahApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasmahApp.swift; sourceTree = "<group>"; };
-		BA86B3052FD353790061B10A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BA86B3072FD3537A0061B10A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA86B30A2FD3537A0061B10A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		BA86B30C2FD3537A0061B10A /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		BA86B30F2FD3537A0061B10A /* Nasmah.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Nasmah.xcdatamodel; sourceTree = "<group>"; };
+		BA86B3242FD3561A0061B10A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		BA86B32E2FD357130061B10A /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
+		BA86B3322FD357350061B10A /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		BA86B3462FD35A9A0061B10A /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		BA86B3492FD35AC80061B10A /* Nasmah.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Nasmah.xcdatamodel; sourceTree = "<group>"; };
+		BA86B34B2FD35B520061B10A /* File1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File1.swift; sourceTree = "<group>"; };
+		BA86B34D2FD35B680061B10A /* File2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File2.swift; sourceTree = "<group>"; };
+		BA86B34F2FD35B7A0061B10A /* File3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File3.swift; sourceTree = "<group>"; };
+		BA86B3512FD35B8B0061B10A /* File4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File4.swift; sourceTree = "<group>"; };
+		BA86B3532FD35B9C0061B10A /* File5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File5.swift; sourceTree = "<group>"; };
+		BA86B3552FD35BB00061B10A /* File6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File6.swift; sourceTree = "<group>"; };
+		BA86B3572FD35BBF0061B10A /* File7.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File7.swift; sourceTree = "<group>"; };
+		BA86B3592FD35BD80061B10A /* File8.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File8.swift; sourceTree = "<group>"; };
+		BA86B35B2FD35BF60061B10A /* File9.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File9.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +77,12 @@
 		BA86B3022FD353790061B10A /* Nasmah */ = {
 			isa = PBXGroup;
 			children = (
-				BA86B3032FD353790061B10A /* NasmahApp.swift */,
-				BA86B3052FD353790061B10A /* ContentView.swift */,
-				BA86B3072FD3537A0061B10A /* Assets.xcassets */,
-				BA86B30C2FD3537A0061B10A /* Persistence.swift */,
-				BA86B30E2FD3537A0061B10A /* Nasmah.xcdatamodeld */,
+				BA86B3162FD355190061B10A /* App */,
+				BA86B3182FD3553A0061B10A /* Core */,
+				BA86B31E2FD3557B0061B10A /* Presentation */,
+				BA86B31D2FD355750061B10A /* Domain */,
+				BA86B31C2FD3556F0061B10A /* Data */,
+				BA86B3212FD355A80061B10A /* Resources */,
 				BA86B3092FD3537A0061B10A /* Preview Content */,
 			);
 			path = Nasmah;
@@ -71,6 +94,184 @@
 				BA86B30A2FD3537A0061B10A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BA86B3162FD355190061B10A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				BA86B3032FD353790061B10A /* NasmahApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		BA86B3182FD3553A0061B10A /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				BA86B3452FD358160061B10A /* Database */,
+				BA86B31B2FD3555D0061B10A /* Utils */,
+				BA86B31A2FD3554F0061B10A /* Constants */,
+				BA86B3192FD355430061B10A /* Network */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		BA86B3192FD355430061B10A /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				BA86B3322FD357350061B10A /* File.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		BA86B31A2FD3554F0061B10A /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				BA86B34B2FD35B520061B10A /* File1.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		BA86B31B2FD3555D0061B10A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				BA86B32E2FD357130061B10A /* test.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		BA86B31C2FD3556F0061B10A /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				BA86B32B2FD356940061B10A /* DataSources */,
+				BA86B32A2FD356720061B10A /* Repositories */,
+				BA86B3292FD356670061B10A /* DTOs */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		BA86B31D2FD355750061B10A /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				BA86B3282FD356560061B10A /* UseCases */,
+				BA86B3272FD356440061B10A /* Repositories */,
+				BA86B3262FD356360061B10A /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		BA86B31E2FD3557B0061B10A /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				BA86B31F2FD355860061B10A /* Screens */,
+				BA86B3202FD3558D0061B10A /* Components */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		BA86B31F2FD355860061B10A /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				BA86B3232FD356020061B10A /* Home */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		BA86B3202FD3558D0061B10A /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				BA86B34D2FD35B680061B10A /* File2.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		BA86B3212FD355A80061B10A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BA86B3072FD3537A0061B10A /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BA86B3232FD356020061B10A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				BA86B3242FD3561A0061B10A /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		BA86B3262FD356360061B10A /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				BA86B3532FD35B9C0061B10A /* File5.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		BA86B3272FD356440061B10A /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				BA86B3512FD35B8B0061B10A /* File4.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		BA86B3282FD356560061B10A /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				BA86B34F2FD35B7A0061B10A /* File3.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		BA86B3292FD356670061B10A /* DTOs */ = {
+			isa = PBXGroup;
+			children = (
+				BA86B35B2FD35BF60061B10A /* File9.swift */,
+			);
+			path = DTOs;
+			sourceTree = "<group>";
+		};
+		BA86B32A2FD356720061B10A /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				BA86B3592FD35BD80061B10A /* File8.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		BA86B32B2FD356940061B10A /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				BA86B32D2FD356C60061B10A /* Local */,
+				BA86B32C2FD356BE0061B10A /* Remote */,
+			);
+			path = DataSources;
+			sourceTree = "<group>";
+		};
+		BA86B32C2FD356BE0061B10A /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				BA86B3572FD35BBF0061B10A /* File7.swift */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		BA86B32D2FD356C60061B10A /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				BA86B3552FD35BB00061B10A /* File6.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		BA86B3452FD358160061B10A /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				BA86B3462FD35A9A0061B10A /* Persistence.swift */,
+				BA86B3482FD35AC80061B10A /* Nasmah.xcdatamodeld */,
+			);
+			path = Database;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,10 +344,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA86B30D2FD3537A0061B10A /* Persistence.swift in Sources */,
-				BA86B3062FD353790061B10A /* ContentView.swift in Sources */,
+				BA86B3522FD35B8B0061B10A /* File4.swift in Sources */,
+				BA86B35C2FD35BF60061B10A /* File9.swift in Sources */,
+				BA86B32F2FD357130061B10A /* test.swift in Sources */,
+				BA86B3472FD35A9A0061B10A /* Persistence.swift in Sources */,
+				BA86B3582FD35BBF0061B10A /* File7.swift in Sources */,
+				BA86B34E2FD35B680061B10A /* File2.swift in Sources */,
+				BA86B34A2FD35AC80061B10A /* Nasmah.xcdatamodeld in Sources */,
 				BA86B3042FD353790061B10A /* NasmahApp.swift in Sources */,
-				BA86B3102FD3537A0061B10A /* Nasmah.xcdatamodeld in Sources */,
+				BA86B3542FD35B9C0061B10A /* File5.swift in Sources */,
+				BA86B3332FD357350061B10A /* File.swift in Sources */,
+				BA86B35A2FD35BD80061B10A /* File8.swift in Sources */,
+				BA86B3252FD3561A0061B10A /* HomeView.swift in Sources */,
+				BA86B3502FD35B7A0061B10A /* File3.swift in Sources */,
+				BA86B3562FD35BB00061B10A /* File6.swift in Sources */,
+				BA86B34C2FD35B520061B10A /* File1.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,12 +559,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		BA86B30E2FD3537A0061B10A /* Nasmah.xcdatamodeld */ = {
+		BA86B3482FD35AC80061B10A /* Nasmah.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				BA86B30F2FD3537A0061B10A /* Nasmah.xcdatamodel */,
+				BA86B3492FD35AC80061B10A /* Nasmah.xcdatamodel */,
 			);
-			currentVersion = BA86B30F2FD3537A0061B10A /* Nasmah.xcdatamodel */;
+			currentVersion = BA86B3492FD35AC80061B10A /* Nasmah.xcdatamodel */;
 			path = Nasmah.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
