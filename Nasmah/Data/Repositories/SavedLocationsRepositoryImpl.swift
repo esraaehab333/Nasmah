@@ -9,19 +9,33 @@ import Foundation
 
 class SavedLocationsRepositoryImpl: SavedLocationsRepository {
     private let localDataSource: CoreDataManager
-    
+
     init(localDataSource: CoreDataManager = .shared) {
         self.localDataSource = localDataSource
     }
-    
-    func saveLocation(name: String, region: String, country: String, latitude: Double, longitude: Double) {
-        localDataSource.saveLocation(name: name, region: region, country: country, latitude: latitude, longitude: longitude)
+
+    func saveLocation(_ location: SavedLocation) {
+        localDataSource.saveLocation(
+            name: location.name,
+            region: location.region,
+            country: location.country,
+            latitude: location.latitude,
+            longitude: location.longitude
+        )
     }
-    
-    func fetchAllLocations() -> [LocationEntity] {
-        return localDataSource.fetchAllLocations()
+
+    func fetchAllLocations() -> [SavedLocation] {
+        localDataSource.fetchAllLocations().map {
+            SavedLocation(
+                name: $0.name ?? "",
+                region: $0.region ?? "",
+                country: $0.country ?? "",
+                lat: $0.latitude,
+                lon: $0.longitude
+            )
+        }
     }
-    
+
     func deleteLocation(name: String) {
         localDataSource.deleteLocation(name: name)
     }

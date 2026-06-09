@@ -11,14 +11,15 @@ struct SavedLocation {
     let name: String
     let region: String
     let country: String
-    let lat: Double
-    let lon: Double
-    
-    init(name: String, region: String = "", country: String = "", lat: Double = 0.0, lon: Double = 0.0) {
+    let latitude: Double
+    let longitude: Double
+
+    // Convenience init matching the test call signature
+    init(name: String, region: String = "", country: String, lat: Double, lon: Double) {
         self.name = name
         self.region = region
         self.country = country
-        self.lat = lat
-        self.lon = lon
+        self.latitude = lat
+        self.longitude = lon
     }
 }

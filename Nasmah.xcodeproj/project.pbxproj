@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA3224872FD8C25500C2CB83 /* SearchLocarionUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3224862FD8C25500C2CB83 /* SearchLocarionUseCase.swift */; };
+		BA3224892FD8C27400C2CB83 /* SaveLocationUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3224882FD8C27400C2CB83 /* SaveLocationUseCase.swift */; };
+		BA32248B2FD8C29700C2CB83 /* FetchSavedLocationsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA32248A2FD8C29700C2CB83 /* FetchSavedLocationsUseCase.swift */; };
+		BA32248D2FD8C2B000C2CB83 /* DeleteLocationUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA32248C2FD8C2B000C2CB83 /* DeleteLocationUseCase.swift */; };
+		BA32248F2FD8C2E300C2CB83 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA32248E2FD8C2E300C2CB83 /* DIContainer.swift */; };
+		BA3224912FD8C33600C2CB83 /* FetchForecastHoursUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3224902FD8C33600C2CB83 /* FetchForecastHoursUseCase.swift */; };
 		BA86B3042FD353790061B10A /* NasmahApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA86B3032FD353790061B10A /* NasmahApp.swift */; };
 		BA86B3082FD3537A0061B10A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA86B3072FD3537A0061B10A /* Assets.xcassets */; };
 		BA86B30B2FD3537A0061B10A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA86B30A2FD3537A0061B10A /* Preview Assets.xcassets */; };
@@ -20,16 +26,6 @@
 		BA86B3502FD35B7A0061B10A /* FetchWeatherUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA86B34F2FD35B7A0061B10A /* FetchWeatherUseCase.swift */; };
 		BA86B3522FD35B8B0061B10A /* WeatherRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA86B3512FD35B8B0061B10A /* WeatherRepository.swift */; };
 		BA86B3542FD35B9C0061B10A /* WeatherEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA86B3532FD35B9C0061B10A /* WeatherEntity.swift */; };
-		BA86B3812FD35BF60061B10A /* ForecastDayEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA86B3802FD35BF60061B10A /* ForecastDayEntity.swift */; };
-		BA86B3832FD35BF60061B10A /* HourEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA86B3822FD35BF60061B10A /* HourEntity.swift */; };
-		BA86B3852FD35BF60061B10A /* SavedLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA86B3842FD35BF60061B10A /* SavedLocation.swift */; };
-		BA86B3872FD35BF60061B10A /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA86B3862FD35BF60061B10A /* SearchResult.swift */; };
-		BA86B3892FD35BF60061B10A /* FetchForecastHoursUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA86B3882FD35BF60061B10A /* FetchForecastHoursUseCase.swift */; };
-		BA86B38B2FD35BF60061B10A /* SearchLocationsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA86B38A2FD35BF60061B10A /* SearchLocationsUseCase.swift */; };
-		BA86B38D2FD35BF60061B10A /* SaveLocationUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA86B38C2FD35BF60061B10A /* SaveLocationUseCase.swift */; };
-		BA86B38F2FD35BF60061B10A /* DeleteLocationUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA86B38E2FD35BF60061B10A /* DeleteLocationUseCase.swift */; };
-		BA86B3912FD35BF60061B10A /* FetchSavedLocationsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA86B3902FD35BF60061B10A /* FetchSavedLocationsUseCase.swift */; };
-		BA86B3932FD35BF60061B10A /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA86B3922FD35BF60061B10A /* DIContainer.swift */; };
 		BA86B3562FD35BB00061B10A /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA86B3552FD35BB00061B10A /* CoreDataManager.swift */; };
 		BA86B3582FD35BBF0061B10A /* WeatherAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA86B3572FD35BBF0061B10A /* WeatherAPIService.swift */; };
 		BA86B35A2FD35BD80061B10A /* WeatherRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA86B3592FD35BD80061B10A /* WeatherRepositoryImpl.swift */; };
@@ -37,9 +33,19 @@
 		BA86B3712FD35BF60061B10A /* SearchResultDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA86B3702FD35BF60061B10A /* SearchResultDTO.swift */; };
 		BA86B3732FD35BF60061B10A /* SavedLocationsRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA86B3722FD35BF60061B10A /* SavedLocationsRepositoryImpl.swift */; };
 		BA86B3752FD35BF60061B10A /* SavedLocationsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA86B3742FD35BF60061B10A /* SavedLocationsRepository.swift */; };
+		BA86B3812FD35BF60061B10A /* ForecastDayEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA86B3802FD35BF60061B10A /* ForecastDayEntity.swift */; };
+		BA86B3832FD35BF60061B10A /* HourEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA86B3822FD35BF60061B10A /* HourEntity.swift */; };
+		BA86B3852FD35BF60061B10A /* SavedLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA86B3842FD35BF60061B10A /* SavedLocation.swift */; };
+		BA86B3872FD35BF60061B10A /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA86B3862FD35BF60061B10A /* SearchResult.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BA3224862FD8C25500C2CB83 /* SearchLocarionUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchLocarionUseCase.swift; sourceTree = "<group>"; };
+		BA3224882FD8C27400C2CB83 /* SaveLocationUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveLocationUseCase.swift; sourceTree = "<group>"; };
+		BA32248A2FD8C29700C2CB83 /* FetchSavedLocationsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchSavedLocationsUseCase.swift; sourceTree = "<group>"; };
+		BA32248C2FD8C2B000C2CB83 /* DeleteLocationUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteLocationUseCase.swift; sourceTree = "<group>"; };
+		BA32248E2FD8C2E300C2CB83 /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
+		BA3224902FD8C33600C2CB83 /* FetchForecastHoursUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchForecastHoursUseCase.swift; sourceTree = "<group>"; };
 		BA86B3002FD353790061B10A /* Nasmah.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nasmah.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA86B3032FD353790061B10A /* NasmahApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasmahApp.swift; sourceTree = "<group>"; };
 		BA86B3072FD3537A0061B10A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -54,16 +60,6 @@
 		BA86B34F2FD35B7A0061B10A /* FetchWeatherUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchWeatherUseCase.swift; sourceTree = "<group>"; };
 		BA86B3512FD35B8B0061B10A /* WeatherRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRepository.swift; sourceTree = "<group>"; };
 		BA86B3532FD35B9C0061B10A /* WeatherEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherEntity.swift; sourceTree = "<group>"; };
-		BA86B3802FD35BF60061B10A /* ForecastDayEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastDayEntity.swift; sourceTree = "<group>"; };
-		BA86B3822FD35BF60061B10A /* HourEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourEntity.swift; sourceTree = "<group>"; };
-		BA86B3842FD35BF60061B10A /* SavedLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedLocation.swift; sourceTree = "<group>"; };
-		BA86B3862FD35BF60061B10A /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
-		BA86B3882FD35BF60061B10A /* FetchForecastHoursUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchForecastHoursUseCase.swift; sourceTree = "<group>"; };
-		BA86B38A2FD35BF60061B10A /* SearchLocationsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchLocationsUseCase.swift; sourceTree = "<group>"; };
-		BA86B38C2FD35BF60061B10A /* SaveLocationUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveLocationUseCase.swift; sourceTree = "<group>"; };
-		BA86B38E2FD35BF60061B10A /* DeleteLocationUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteLocationUseCase.swift; sourceTree = "<group>"; };
-		BA86B3902FD35BF60061B10A /* FetchSavedLocationsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchSavedLocationsUseCase.swift; sourceTree = "<group>"; };
-		BA86B3922FD35BF60061B10A /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
 		BA86B3552FD35BB00061B10A /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		BA86B3572FD35BBF0061B10A /* WeatherAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAPIService.swift; sourceTree = "<group>"; };
 		BA86B3592FD35BD80061B10A /* WeatherRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRepositoryImpl.swift; sourceTree = "<group>"; };
@@ -71,6 +67,10 @@
 		BA86B3702FD35BF60061B10A /* SearchResultDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultDTO.swift; sourceTree = "<group>"; };
 		BA86B3722FD35BF60061B10A /* SavedLocationsRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedLocationsRepositoryImpl.swift; sourceTree = "<group>"; };
 		BA86B3742FD35BF60061B10A /* SavedLocationsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedLocationsRepository.swift; sourceTree = "<group>"; };
+		BA86B3802FD35BF60061B10A /* ForecastDayEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastDayEntity.swift; sourceTree = "<group>"; };
+		BA86B3822FD35BF60061B10A /* HourEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourEntity.swift; sourceTree = "<group>"; };
+		BA86B3842FD35BF60061B10A /* SavedLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedLocation.swift; sourceTree = "<group>"; };
+		BA86B3862FD35BF60061B10A /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,7 +126,6 @@
 			isa = PBXGroup;
 			children = (
 				BA86B3032FD353790061B10A /* NasmahApp.swift */,
-				BA86B3922FD35BF60061B10A /* DIContainer.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -162,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				BA86B32E2FD357130061B10A /* test.swift */,
+				BA32248E2FD8C2E300C2CB83 /* DIContainer.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -252,11 +252,11 @@
 			isa = PBXGroup;
 			children = (
 				BA86B34F2FD35B7A0061B10A /* FetchWeatherUseCase.swift */,
-				BA86B3882FD35BF60061B10A /* FetchForecastHoursUseCase.swift */,
-				BA86B38A2FD35BF60061B10A /* SearchLocationsUseCase.swift */,
-				BA86B38C2FD35BF60061B10A /* SaveLocationUseCase.swift */,
-				BA86B38E2FD35BF60061B10A /* DeleteLocationUseCase.swift */,
-				BA86B3902FD35BF60061B10A /* FetchSavedLocationsUseCase.swift */,
+				BA3224862FD8C25500C2CB83 /* SearchLocarionUseCase.swift */,
+				BA3224882FD8C27400C2CB83 /* SaveLocationUseCase.swift */,
+				BA32248A2FD8C29700C2CB83 /* FetchSavedLocationsUseCase.swift */,
+				BA32248C2FD8C2B000C2CB83 /* DeleteLocationUseCase.swift */,
+				BA3224902FD8C33600C2CB83 /* FetchForecastHoursUseCase.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -388,6 +388,7 @@
 				BA86B32F2FD357130061B10A /* test.swift in Sources */,
 				BA86B3472FD35A9A0061B10A /* Persistence.swift in Sources */,
 				BA86B3582FD35BBF0061B10A /* WeatherAPIService.swift in Sources */,
+				BA32248B2FD8C29700C2CB83 /* FetchSavedLocationsUseCase.swift in Sources */,
 				BA86B34E2FD35B680061B10A /* File2.swift in Sources */,
 				BA86B34A2FD35AC80061B10A /* Nasmah.xcdatamodeld in Sources */,
 				BA86B3042FD353790061B10A /* NasmahApp.swift in Sources */,
@@ -396,20 +397,19 @@
 				BA86B35A2FD35BD80061B10A /* WeatherRepositoryImpl.swift in Sources */,
 				BA86B3252FD3561A0061B10A /* HomeView.swift in Sources */,
 				BA86B3502FD35B7A0061B10A /* FetchWeatherUseCase.swift in Sources */,
+				BA3224892FD8C27400C2CB83 /* SaveLocationUseCase.swift in Sources */,
+				BA32248D2FD8C2B000C2CB83 /* DeleteLocationUseCase.swift in Sources */,
 				BA86B3812FD35BF60061B10A /* ForecastDayEntity.swift in Sources */,
 				BA86B3832FD35BF60061B10A /* HourEntity.swift in Sources */,
 				BA86B3852FD35BF60061B10A /* SavedLocation.swift in Sources */,
 				BA86B3872FD35BF60061B10A /* SearchResult.swift in Sources */,
-				BA86B3892FD35BF60061B10A /* FetchForecastHoursUseCase.swift in Sources */,
-				BA86B38B2FD35BF60061B10A /* SearchLocationsUseCase.swift in Sources */,
-				BA86B38D2FD35BF60061B10A /* SaveLocationUseCase.swift in Sources */,
-				BA86B38F2FD35BF60061B10A /* DeleteLocationUseCase.swift in Sources */,
-				BA86B3912FD35BF60061B10A /* FetchSavedLocationsUseCase.swift in Sources */,
-				BA86B3932FD35BF60061B10A /* DIContainer.swift in Sources */,
 				BA86B3562FD35BB00061B10A /* CoreDataManager.swift in Sources */,
+				BA3224912FD8C33600C2CB83 /* FetchForecastHoursUseCase.swift in Sources */,
 				BA86B34C2FD35B520061B10A /* Config.swift in Sources */,
+				BA3224872FD8C25500C2CB83 /* SearchLocarionUseCase.swift in Sources */,
 				BA86B3712FD35BF60061B10A /* SearchResultDTO.swift in Sources */,
 				BA86B3732FD35BF60061B10A /* SavedLocationsRepositoryImpl.swift in Sources */,
+				BA32248F2FD8C2E300C2CB83 /* DIContainer.swift in Sources */,
 				BA86B3752FD35BF60061B10A /* SavedLocationsRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
