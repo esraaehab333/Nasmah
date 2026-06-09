@@ -8,6 +8,6 @@
 import Foundation
 
 protocol WeatherRepository {
-    func getWeather(for query: String) async throws -> WeatherResponseDTO
-    func searchLocations(query: String) async throws -> [SearchResultDTO]
+    func getWeather(for query: String) async throws -> WeatherEntity
+    func searchLocations(query: String) async throws -> [SearchResult]
 }

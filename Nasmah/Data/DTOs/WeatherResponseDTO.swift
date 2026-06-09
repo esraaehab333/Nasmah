@@ -39,11 +39,18 @@ struct ForecastDTO: Codable {
 struct ForecastDayDTO: Codable {
     let date: String
     let day: DayDTO
+    let hour: [HourDTO]?
 }
 
 struct DayDTO: Codable {
     let maxtemp_c: Double
     let mintemp_c: Double
     let avgtemp_c: Double
+    let condition: ConditionDTO
+}
+
+struct HourDTO: Codable {
+    let time: String
+    let temp_c: Double
     let condition: ConditionDTO
 }

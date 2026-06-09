@@ -8,7 +8,7 @@
 import Foundation
 
 protocol SavedLocationsRepository {
-    func saveLocation(name: String, region: String, country: String, latitude: Double, longitude: Double)
-    func fetchAllLocations() -> [LocationEntity]
+    func saveLocation(_ location: SavedLocation)
+    func fetchAllLocations() -> [SavedLocation]
     func deleteLocation(name: String)
 }
