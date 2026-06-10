@@ -69,6 +69,11 @@ struct HomeView: View {
             .task { await vm.loadWeather() }
             .navigationDestination(isPresented: $navigateToForecast) {
                 if let day = vm.weather?.forecast[safe: selectedDayIndex] {
+                    ForecastView(
+                        forecast: day,
+                        dayIndex: selectedDayIndex,
+                        dayLabel: vm.dayLabel(index: selectedDayIndex)
+                    )
                 }
             }
         }
@@ -107,7 +112,6 @@ struct HomeView: View {
         .padding(.top, -97)
     }
 
-    // MARK: - Forecast rows
     private var forecastSection: some View {
         VStack(spacing: 0) {
             ForEach(0..<3) { index in
@@ -137,8 +141,6 @@ struct HomeView: View {
         .padding(.horizontal, 16)
         .padding(.top, 16)
     }
-
-    // MARK: - Hourly strip
     private var hourlyCard: some View {
         VStack(alignment: .leading, spacing: 12) {
             Text("Hourly forecast")
@@ -166,7 +168,6 @@ struct HomeView: View {
         .padding(.top, 12)
     }
 
-    // MARK: - Stats grid
     private var statsGrid: some View {
         LazyVGrid(
             columns: [GridItem(.flexible()), GridItem(.flexible())],
@@ -224,54 +225,5 @@ struct HomeView: View {
         }
         .padding(.horizontal, 16)
         .padding(.vertical, 12)
-    }
-}
-
-// MARK: - HourlyCell
-private struct HourlyCell: View {
-    let hour: HourEntity
-    let primaryColor: Color
-    let secondaryColor: Color
-
-    var body: some View {
-        VStack(spacing: 6) {
-            Text(formattedHour)
-                .font(.system(size: 12, weight: .medium))
-                .foregroundStyle(secondaryColor)
-
-            AsyncImage(url: iconURL) { image in
-                image.resizable().scaledToFit()
-            } placeholder: {
-                Image(systemName: "cloud").foregroundStyle(secondaryColor)
-            }
-            .frame(width: 28, height: 28)
-
-            Text("\(Int(hour.tempC))°")
-                .font(.system(size: 16, weight: .semibold))
-                .foregroundStyle(primaryColor)
-
-            HStack(spacing: 2) {
-                Image(systemName: "drop.fill")
-                    .font(.system(size: 9))
-                    .foregroundStyle(secondaryColor)
-                Text("\(hour.chanceOfRain)%")
-                    .font(.system(size: 11))
-                    .foregroundStyle(secondaryColor)
-            }
-        }
-    }
-
-    private var formattedHour: String {
-        let df = DateFormatter()
-        df.dateFormat = "yyyy-MM-dd HH:mm"
-        guard let date = df.date(from: hour.time) else { return hour.time }
-        df.dateFormat = "h a"
-        return df.string(from: date)
-    }
-
-    private var iconURL: URL? {
-        let path = hour.conditionIcon
-        let fixed = path.hasPrefix("//") ? "https:" + path : path
-        return URL(string: fixed)
     }
 }

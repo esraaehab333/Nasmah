@@ -41,6 +41,9 @@
 		BADACB9D2FDA29F000AE236D /* ForecastRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADACB9C2FDA29F000AE236D /* ForecastRowView.swift */; };
 		BADACB9F2FDA2A0200AE236D /* HourlyRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADACB9E2FDA2A0200AE236D /* HourlyRowView.swift */; };
 		BADACBA32FDA2A3A00AE236D /* WeatherStatCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADACBA22FDA2A3A00AE236D /* WeatherStatCard.swift */; };
+		BADACBAB2FDA2E1100AE236D /* ForecastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADACBAA2FDA2E1100AE236D /* ForecastView.swift */; };
+		BADACBAD2FDA2E3800AE236D /* ForecastViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADACBAC2FDA2E3800AE236D /* ForecastViewModel.swift */; };
+		BADACBAF2FDA2EF900AE236D /* HourlyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADACBAE2FDA2EF900AE236D /* HourlyCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,6 +82,9 @@
 		BADACB9C2FDA29F000AE236D /* ForecastRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastRowView.swift; sourceTree = "<group>"; };
 		BADACB9E2FDA2A0200AE236D /* HourlyRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyRowView.swift; sourceTree = "<group>"; };
 		BADACBA22FDA2A3A00AE236D /* WeatherStatCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherStatCard.swift; sourceTree = "<group>"; };
+		BADACBAA2FDA2E1100AE236D /* ForecastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastView.swift; sourceTree = "<group>"; };
+		BADACBAC2FDA2E3800AE236D /* ForecastViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastViewModel.swift; sourceTree = "<group>"; };
+		BADACBAE2FDA2EF900AE236D /* HourlyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +203,8 @@
 		BA86B31F2FD355860061B10A /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				BADACBA52FDA2DD000AE236D /* Forecast */,
+				BADACBA42FDA2DC800AE236D /* Search */,
 				BA86B3232FD356020061B10A /* Home */,
 			);
 			path = Screens;
@@ -208,6 +216,7 @@
 				BADACB9C2FDA29F000AE236D /* ForecastRowView.swift */,
 				BADACB9E2FDA2A0200AE236D /* HourlyRowView.swift */,
 				BADACBA22FDA2A3A00AE236D /* WeatherStatCard.swift */,
+				BADACBAE2FDA2EF900AE236D /* HourlyCell.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -333,6 +342,54 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		BADACBA42FDA2DC800AE236D /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				BADACBA72FDA2DE800AE236D /* ViewModel */,
+				BADACBA62FDA2DE000AE236D /* View */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		BADACBA52FDA2DD000AE236D /* Forecast */ = {
+			isa = PBXGroup;
+			children = (
+				BADACBA92FDA2DF600AE236D /* ViewModel */,
+				BADACBA82FDA2DEE00AE236D /* View */,
+			);
+			path = Forecast;
+			sourceTree = "<group>";
+		};
+		BADACBA62FDA2DE000AE236D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BADACBA72FDA2DE800AE236D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BADACBA82FDA2DEE00AE236D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BADACBAA2FDA2E1100AE236D /* ForecastView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BADACBA92FDA2DF600AE236D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BADACBAC2FDA2E3800AE236D /* ForecastViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -405,6 +462,7 @@
 			files = (
 				BADACB9D2FDA29F000AE236D /* ForecastRowView.swift in Sources */,
 				BA86B3522FD35B8B0061B10A /* WeatherRepository.swift in Sources */,
+				BADACBAB2FDA2E1100AE236D /* ForecastView.swift in Sources */,
 				BA86B35C2FD35BF60061B10A /* WeatherResponseDTO.swift in Sources */,
 				BA86B3472FD35A9A0061B10A /* Persistence.swift in Sources */,
 				BA86B3582FD35BBF0061B10A /* WeatherAPIService.swift in Sources */,
@@ -413,6 +471,7 @@
 				BA86B3042FD353790061B10A /* NasmahApp.swift in Sources */,
 				BA86B3542FD35B9C0061B10A /* WeatherEntity.swift in Sources */,
 				BADACB972FDA28C800AE236D /* LoadingView.swift in Sources */,
+				BADACBAF2FDA2EF900AE236D /* HourlyCell.swift in Sources */,
 				BA86B35A2FD35BD80061B10A /* WeatherRepositoryImpl.swift in Sources */,
 				BA86B3252FD3561A0061B10A /* HomeView.swift in Sources */,
 				BA86B3502FD35B7A0061B10A /* FetchWeatherUseCase.swift in Sources */,
@@ -423,6 +482,7 @@
 				BA86B3832FD35BF60061B10A /* HourEntity.swift in Sources */,
 				BA86B3852FD35BF60061B10A /* SavedLocation.swift in Sources */,
 				BA86B3872FD35BF60061B10A /* SearchResult.swift in Sources */,
+				BADACBAD2FDA2E3800AE236D /* ForecastViewModel.swift in Sources */,
 				BA86B3562FD35BB00061B10A /* CoreDataManager.swift in Sources */,
 				BA3224912FD8C33600C2CB83 /* FetchForecastHoursUseCase.swift in Sources */,
 				BADACBA32FDA2A3A00AE236D /* WeatherStatCard.swift in Sources */,
