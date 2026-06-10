@@ -76,6 +76,20 @@ struct HomeView: View {
                     )
                 }
             }
+            .sheet(isPresented: $showSearch) {
+                SearchSheetView { city in
+                    showSearch = false
+                    vm.updateCity(city)
+                    Task { await vm.loadWeather() }
+                }
+            }
+            .sheet(isPresented: $showFavorites) {
+                FavoritesSheetView { city in
+                    showFavorites = false
+                    vm.updateCity(city)
+                    Task { await vm.loadWeather() }
+                }
+            }
         }
     }
 
@@ -141,6 +155,7 @@ struct HomeView: View {
         .padding(.horizontal, 16)
         .padding(.top, 16)
     }
+
     private var hourlyCard: some View {
         VStack(alignment: .leading, spacing: 12) {
             Text("Hourly forecast")
