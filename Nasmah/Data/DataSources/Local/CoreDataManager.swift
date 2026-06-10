@@ -28,7 +28,7 @@ class CoreDataManager {
         do {
             try context.save()
         } catch {
-            print("❌ Failed to save location: \(error)")
+            print(" Failed to save location: \(error)")
         }
     }
     
@@ -37,7 +37,7 @@ class CoreDataManager {
         do {
             return try context.fetch(request)
         } catch {
-            print("❌ Failed to fetch locations: \(error)")
+            print("Failed to fetch locations: \(error)")
             return []
         }
     }
@@ -53,7 +53,7 @@ class CoreDataManager {
             }
             try context.save()
         } catch {
-            print("❌ Failed to delete location: \(error)")
+            print("Failed to delete location: \(error)")
         }
     }
 }

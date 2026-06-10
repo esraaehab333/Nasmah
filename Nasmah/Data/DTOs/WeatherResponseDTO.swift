@@ -23,6 +23,11 @@ struct LocationDTO: Codable {
 
 struct CurrentDTO: Codable {
     let temp_c: Double
+    let feelslike_c: Double
+    let humidity: Int
+    let wind_kph: Double
+    let uv: Double
+    let vis_km: Double
     let condition: ConditionDTO
 }
 
@@ -39,18 +44,34 @@ struct ForecastDTO: Codable {
 struct ForecastDayDTO: Codable {
     let date: String
     let day: DayDTO
+    let astro: AstroDTO
     let hour: [HourDTO]?
 }
+
 
 struct DayDTO: Codable {
     let maxtemp_c: Double
     let mintemp_c: Double
     let avgtemp_c: Double
+    let avghumidity: Int
+    let avgvis_km: Double
+    let uv: Double
     let condition: ConditionDTO
 }
 
 struct HourDTO: Codable {
     let time: String
     let temp_c: Double
+    let feelslike_c: Double
+    let humidity: Int
+    let chance_of_rain: Int
+    let wind_kph: Double
+    let vis_km: Double
+    let uv: Double
     let condition: ConditionDTO
+}
+
+struct AstroDTO: Codable {
+    let sunrise: String
+    let sunset: String
 }

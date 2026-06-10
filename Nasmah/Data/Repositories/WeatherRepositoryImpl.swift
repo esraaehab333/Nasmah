@@ -24,8 +24,6 @@ class WeatherRepositoryImpl: WeatherRepository {
         return dtos.map { mapToSearchResult($0) }
     }
     
-    // MARK: - Mappers
-    
     private func mapToEntity(_ dto: WeatherResponseDTO) -> WeatherEntity {
         let location = WeatherEntity.Location(
             name: dto.location.name,
@@ -34,22 +32,33 @@ class WeatherRepositoryImpl: WeatherRepository {
             lat: dto.location.lat,
             lon: dto.location.lon
         )
-        
+
         let current = WeatherEntity.Current(
             tempC: dto.current.temp_c,
+            feelsLikeC: dto.current.feelslike_c,
+            humidity: dto.current.humidity,
+            windKph: dto.current.wind_kph,
+            uvIndex: dto.current.uv,
+            visibilityKm: dto.current.vis_km,
             conditionText: dto.current.condition.text,
             conditionIcon: dto.current.condition.icon,
             conditionCode: dto.current.condition.code
         )
-        
+
         let forecast = dto.forecast.forecastday.map { dayDTO -> ForecastDayEntity in
-            let hours = (dayDTO.hour ?? []).map { hourDTO -> HourEntity in
+            let hours = (dayDTO.hour ?? []).map { h -> HourEntity in
                 HourEntity(
-                    time: hourDTO.time,
-                    tempC: hourDTO.temp_c,
-                    conditionText: hourDTO.condition.text,
-                    conditionIcon: hourDTO.condition.icon,
-                    conditionCode: hourDTO.condition.code
+                    time: h.time,
+                    tempC: h.temp_c,
+                    feelsLikeC: h.feelslike_c,
+                    humidity: h.humidity,
+                    chanceOfRain: h.chance_of_rain,
+                    windKph: h.wind_kph,
+                    visibilityKm: h.vis_km,
+                    uvIndex: h.uv,
+                    conditionText: h.condition.text,
+                    conditionIcon: h.condition.icon,
+                    conditionCode: h.condition.code
                 )
             }
             return ForecastDayEntity(
@@ -57,13 +66,18 @@ class WeatherRepositoryImpl: WeatherRepository {
                 maxTempC: dayDTO.day.maxtemp_c,
                 minTempC: dayDTO.day.mintemp_c,
                 avgTempC: dayDTO.day.avgtemp_c,
+                avgHumidity: dayDTO.day.avghumidity,
+                avgVisibilityKm: dayDTO.day.avgvis_km,
+                uvIndex: dayDTO.day.uv,
+                sunrise: dayDTO.astro.sunrise,
+                sunset: dayDTO.astro.sunset,
                 conditionText: dayDTO.day.condition.text,
                 conditionIcon: dayDTO.day.condition.icon,
                 conditionCode: dayDTO.day.condition.code,
                 hours: hours
             )
         }
-        
+
         return WeatherEntity(location: location, current: current, forecast: forecast)
     }
     
