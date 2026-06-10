@@ -21,9 +21,14 @@ struct WeatherEntity {
     }
     
     struct Current {
-        let tempC: Double
-        let conditionText: String
-        let conditionIcon: String
-        let conditionCode: Int
-    }
+            let tempC: Double
+            let feelsLikeC: Double
+            let humidity: Int
+            let windKph: Double
+            let uvIndex: Double
+            let visibilityKm: Double
+            let conditionText: String
+            let conditionIcon: String
+            let conditionCode: Int
+        }
 }

@@ -13,8 +13,7 @@ struct SavedLocation {
     let country: String
     let latitude: Double
     let longitude: Double
-
-    // Convenience init matching the test call signature
+    
     init(name: String, region: String = "", country: String, lat: Double, lon: Double) {
         self.name = name
         self.region = region
