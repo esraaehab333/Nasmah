@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Alamofire
 
 protocol WeatherAPIService {
     func fetchWeather(query: String) async throws -> WeatherResponseDTO
@@ -16,7 +17,7 @@ enum WeatherAPIError: Error, LocalizedError {
     case invalidURL
     case badServerResponse
     case decodingError(Error)
-    
+
     var errorDescription: String? {
         switch self {
         case .invalidURL:
@@ -30,60 +31,64 @@ enum WeatherAPIError: Error, LocalizedError {
 }
 
 class WeatherAPIServiceImpl: WeatherAPIService {
-    private let session: URLSession
-    
-    init(session: URLSession = .shared) {
+    private let session: Session
+
+    init(session: Session = .default) {
         self.session = session
     }
-    
+
     func fetchWeather(query: String) async throws -> WeatherResponseDTO {
-        var components = URLComponents(string: "\(Config.baseURL)/forecast.json")
-        components?.queryItems = [
-            URLQueryItem(name: "key", value: Config.apiKey),
-            URLQueryItem(name: "q", value: query),
-            URLQueryItem(name: "days", value: "3")
+        let parameters: Parameters = [
+            "key":  Config.apiKey,
+            "q":    query,
+            "days": "3"
         ]
-        
-        guard let url = components?.url else {
-            throw WeatherAPIError.invalidURL
-        }
-        
-        let (data, response) = try await session.data(from: url)
-        
-        guard let httpResponse = response as? HTTPURLResponse, (200...299).contains(httpResponse.statusCode) else {
-            throw WeatherAPIError.badServerResponse
-        }
-        
-        do {
-            let decoder = JSONDecoder()
-            return try decoder.decode(WeatherResponseDTO.self, from: data)
-        } catch {
-            throw WeatherAPIError.decodingError(error)
+
+        return try await withCheckedThrowingContinuation { continuation in
+            session
+                .request("\(Config.baseURL)/forecast.json", parameters: parameters)
+                .validate()
+                .responseDecodable(of: WeatherResponseDTO.self) { response in
+                    switch response.result {
+                    case .success(let dto):
+                        continuation.resume(returning: dto)
+                    case .failure(let error):
+                        if let underlyingError = error.underlyingError as? DecodingError {
+                            continuation.resume(throwing: WeatherAPIError.decodingError(underlyingError))
+                        } else if response.response == nil {
+                            continuation.resume(throwing: WeatherAPIError.invalidURL)
+                        } else {
+                            continuation.resume(throwing: WeatherAPIError.badServerResponse)
+                        }
+                    }
+                }
         }
     }
-    
+
     func searchLocations(query: String) async throws -> [SearchResultDTO] {
-        var components = URLComponents(string: "\(Config.baseURL)/search.json")
-        components?.queryItems = [
-            URLQueryItem(name: "key", value: Config.apiKey),
-            URLQueryItem(name: "q", value: query)
+        let parameters: Parameters = [
+            "key": Config.apiKey,
+            "q":   query
         ]
-        
-        guard let url = components?.url else {
-            throw WeatherAPIError.invalidURL
-        }
-        
-        let (data, response) = try await session.data(from: url)
-        
-        guard let httpResponse = response as? HTTPURLResponse, (200...299).contains(httpResponse.statusCode) else {
-            throw WeatherAPIError.badServerResponse
-        }
-        
-        do {
-            let decoder = JSONDecoder()
-            return try decoder.decode([SearchResultDTO].self, from: data)
-        } catch {
-            throw WeatherAPIError.decodingError(error)
+
+        return try await withCheckedThrowingContinuation { continuation in
+            session
+                .request("\(Config.baseURL)/search.json", parameters: parameters)
+                .validate()
+                .responseDecodable(of: [SearchResultDTO].self) { response in
+                    switch response.result {
+                    case .success(let dto):
+                        continuation.resume(returning: dto)
+                    case .failure(let error):
+                        if let underlyingError = error.underlyingError as? DecodingError {
+                            continuation.resume(throwing: WeatherAPIError.decodingError(underlyingError))
+                        } else if response.response == nil {
+                            continuation.resume(throwing: WeatherAPIError.invalidURL)
+                        } else {
+                            continuation.resume(throwing: WeatherAPIError.badServerResponse)
+                        }
+                    }
+                }
         }
     }
 }

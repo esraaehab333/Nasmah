@@ -18,54 +18,48 @@ struct HourlyRowView: View {
         HStack(spacing: 0) {
             HStack(spacing: 8) {
                 Text(isNow ? "NOW" : time)
-                    .font(.system(size: 15, weight: isNow ? .bold : .regular))
+                    .font(.system(size: 15, weight: isNow ? .bold : .medium, design: .rounded))
                     .foregroundStyle(.white)
-                    .frame(width: 60, alignment: .leading)
 
                 if isNow {
-                    Text("NOW")
-                        .font(.system(size: 10, weight: .bold))
+                    Text("LIVE")
+                        .font(.system(size: 10, weight: .black))
                         .foregroundStyle(.white)
-                        .padding(.horizontal, 7)
-                        .padding(.vertical, 3)
-                        .background(
-                            Capsule().fill(Color(hex: "#4CAF50"))
-                        )
+                        .padding(.horizontal, 6)
+                        .padding(.vertical, 2)
+                        .background(Capsule().fill(Color(hex: "#4CAF50")))
                 }
             }
             .frame(width: 110, alignment: .leading)
 
             Spacer()
+
             AsyncImage(url: iconURL) { image in
-                image
-                    .resizable()
-                    .scaledToFit()
+                image.resizable().scaledToFit()
             } placeholder: {
-                Image(systemName: "cloud")
-                    .foregroundStyle(.white.opacity(0.6))
+                Image(systemName: "cloud.fill").foregroundStyle(.white.opacity(0.6))
             }
-            .frame(width: 36, height: 36)
+            .frame(width: 34, height: 34)
 
             Spacer()
+
             Text(conditionText)
-                .font(.system(size: 13))
-                .foregroundStyle(.white.opacity(0.7))
-                .frame(width: 90, alignment: .center)
+                .font(.system(size: 13, weight: .medium, design: .rounded))
+                .foregroundStyle(.white.opacity(0.8))
+                .frame(width: 95, alignment: .center)
                 .lineLimit(2)
                 .multilineTextAlignment(.center)
 
             Spacer()
+
             Text("\(tempInt)°")
-                .font(.system(size: 22, weight: .semibold))
+                .font(.system(size: 22, weight: .bold, design: .rounded))
                 .foregroundStyle(.white)
-                .frame(width: 52, alignment: .trailing)
+                .frame(width: 50, alignment: .trailing)
         }
-        .padding(.horizontal, 20)
+        .padding(.horizontal, 18)
         .padding(.vertical, 14)
-        .background(
-            isNow
-                ? Color.white.opacity(0.08)
-                : Color.clear
-        )
+        .background(isNow ? .white.opacity(0.1) : .clear)
+        .clipShape(RoundedRectangle(cornerRadius: isNow ? 16 : 0))
     }
 }

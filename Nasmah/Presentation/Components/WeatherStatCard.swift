@@ -13,45 +13,46 @@ struct WeatherStatCard: View {
     let value: String
     let subtitle: String?
     let detail: String?
-    var primaryColor: Color = .white
-    var secondaryColor: Color = .white.opacity(0.7)
-    var cardBackground: Color = .white.opacity(0.12)
+    var primaryColor: Color
+    var secondaryColor: Color
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 6) {
+        VStack(alignment: .leading, spacing: 8) {
             HStack(spacing: 6) {
                 Image(systemName: icon)
-                    .font(.system(size: 12, weight: .semibold))
-                    .foregroundStyle(secondaryColor)
+                    .font(.system(size: 12, weight: .bold))
                 Text(title)
-                    .font(.system(size: 11, weight: .semibold))
-                    .foregroundStyle(secondaryColor)
-                    .textCase(.uppercase)
+                    .font(.system(size: 11, weight: .bold, design: .rounded))
+                    .tracking(0.5)
             }
+            .foregroundStyle(secondaryColor)
 
             Text(value)
-                .font(.system(size: 28, weight: .bold))
+                .font(.system(size: 26, weight: .bold, design: .rounded))
                 .foregroundStyle(primaryColor)
 
             if let subtitle {
                 Text(subtitle)
-                    .font(.system(size: 12))
-                    .foregroundStyle(secondaryColor)
+                    .font(.system(size: 13, weight: .semibold))
+                    .foregroundStyle(primaryColor.opacity(0.8))
             }
+            
             if let detail {
+                Spacer(minLength: 4)
                 Text(detail)
-                    .font(.system(size: 12))
-                    .foregroundStyle(secondaryColor.opacity(0.8))
+                    .font(.system(size: 12, weight: .regular))
+                    .foregroundStyle(secondaryColor.opacity(0.9))
+                    .lineLimit(3)
                     .fixedSize(horizontal: false, vertical: true)
             }
-
-            Spacer(minLength: 0)
         }
-        .padding(14)
-        .frame(maxWidth: .infinity, minHeight: 130, alignment: .topLeading)
-        .background(
-            RoundedRectangle(cornerRadius: 20)
-                .fill(cardBackground)
+        .padding(16)
+        .frame(maxWidth: .infinity, minHeight: 140, alignment: .topLeading)
+        .background(.ultraThinMaterial)
+        .clipShape(RoundedRectangle(cornerRadius: 22, style: .continuous))
+        .overlay(
+            RoundedRectangle(cornerRadius: 22, style: .continuous)
+                .stroke(.white.opacity(0.15), lineWidth: 1)
         )
     }
 }

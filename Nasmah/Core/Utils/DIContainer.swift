@@ -11,7 +11,6 @@ final class DIContainer {
     static let shared = DIContainer()
     private init() {}
 
-    // MARK: - Data Sources
     private func makeWeatherAPIService() -> WeatherAPIService {
         WeatherAPIServiceImpl()
     }
@@ -19,8 +18,7 @@ final class DIContainer {
     private func makeCoreDataManager() -> CoreDataManager {
         .shared
     }
-
-    // MARK: - Repositories
+    
     private func makeWeatherRepository() -> WeatherRepository {
         WeatherRepositoryImpl(remoteDataSource: makeWeatherAPIService())
     }
@@ -29,7 +27,6 @@ final class DIContainer {
         SavedLocationsRepositoryImpl(localDataSource: makeCoreDataManager())
     }
 
-    // MARK: - Use Cases (public factory methods)
     func makeFetchWeatherUseCase() -> FetchWeatherUseCaseProtocol {
         FetchWeatherUseCase(repository: makeWeatherRepository())
     }
