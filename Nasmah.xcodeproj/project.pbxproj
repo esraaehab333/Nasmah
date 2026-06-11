@@ -54,11 +54,12 @@
 		BAE500052FDB487800866315 /* HomeViewModel+Apperance.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE500042FDB487800866315 /* HomeViewModel+Apperance.swift */; };
 		BAE500072FDB489800866315 /* HomeViewModel+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE500062FDB489800866315 /* HomeViewModel+Helpers.swift */; };
 		BAE500092FDB495000866315 /* HomeContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE500082FDB495000866315 /* HomeContentView.swift */; };
-		BAE5000C2FDB496A00866315 /* HomeHeroSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE5000B2FDB496A00866315 /* HomeHeroSection.swift */; };
-		BAE5000E2FDB497C00866315 /* HomeHourlySection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE5000D2FDB497C00866315 /* HomeHourlySection.swift */; };
-		BAE500102FDB498B00866315 /* HomeStatsGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE5000F2FDB498B00866315 /* HomeStatsGridView.swift */; };
-		BAE500122FDB499E00866315 /* HomeForecastSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE500112FDB499D00866315 /* HomeForecastSection.swift */; };
 		BAE500142FDB49B600866315 /* HourlyCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE500132FDB49B600866315 /* HourlyCellView.swift */; };
+		BAE500162FDB4DE800866315 /* HomeToolBarButtns.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE500152FDB4DE800866315 /* HomeToolBarButtns.swift */; };
+		BAE500182FDB4E0A00866315 /* HeroSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE500172FDB4E0A00866315 /* HeroSectionView.swift */; };
+		BAE5001A2FDB4E2D00866315 /* HourlyCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE500192FDB4E2D00866315 /* HourlyCardView.swift */; };
+		BAE5001C2FDB4E6F00866315 /* StatsGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE5001B2FDB4E6F00866315 /* StatsGridView.swift */; };
+		BAE5001E2FDB4E9200866315 /* ForecastSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE5001D2FDB4E9200866315 /* ForecastSectionView.swift */; };
 		BAE5FFCF2FDB3A0800866315 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE5FFCE2FDB3A0800866315 /* LocationManager.swift */; };
 		BAE5FFD62FDB427200866315 /* FavoritesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE5FFD52FDB427200866315 /* FavoritesListView.swift */; };
 		BAE5FFD82FDB429200866315 /* FavoriteLocationRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE5FFD72FDB429200866315 /* FavoriteLocationRow.swift */; };
@@ -130,11 +131,12 @@
 		BAE500042FDB487800866315 /* HomeViewModel+Apperance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewModel+Apperance.swift"; sourceTree = "<group>"; };
 		BAE500062FDB489800866315 /* HomeViewModel+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewModel+Helpers.swift"; sourceTree = "<group>"; };
 		BAE500082FDB495000866315 /* HomeContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeContentView.swift; sourceTree = "<group>"; };
-		BAE5000B2FDB496A00866315 /* HomeHeroSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeroSection.swift; sourceTree = "<group>"; };
-		BAE5000D2FDB497C00866315 /* HomeHourlySection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHourlySection.swift; sourceTree = "<group>"; };
-		BAE5000F2FDB498B00866315 /* HomeStatsGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStatsGridView.swift; sourceTree = "<group>"; };
-		BAE500112FDB499D00866315 /* HomeForecastSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeForecastSection.swift; sourceTree = "<group>"; };
 		BAE500132FDB49B600866315 /* HourlyCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyCellView.swift; sourceTree = "<group>"; };
+		BAE500152FDB4DE800866315 /* HomeToolBarButtns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeToolBarButtns.swift; sourceTree = "<group>"; };
+		BAE500172FDB4E0A00866315 /* HeroSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroSectionView.swift; sourceTree = "<group>"; };
+		BAE500192FDB4E2D00866315 /* HourlyCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyCardView.swift; sourceTree = "<group>"; };
+		BAE5001B2FDB4E6F00866315 /* StatsGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsGridView.swift; sourceTree = "<group>"; };
+		BAE5001D2FDB4E9200866315 /* ForecastSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastSectionView.swift; sourceTree = "<group>"; };
 		BAE5FFCE2FDB3A0800866315 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		BAE5FFD02FDB3C5500866315 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		BAE5FFD52FDB427200866315 /* FavoritesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListView.swift; sourceTree = "<group>"; };
@@ -306,7 +308,6 @@
 		BA86B3232FD356020061B10A /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				BAE5000A2FDB495C00866315 /* Components */,
 				BADACB932FDA287100AE236D /* ViewModel */,
 				BADACB922FDA283B00AE236D /* View */,
 			);
@@ -407,6 +408,11 @@
 				BADACB962FDA28C800AE236D /* LoadingView.swift */,
 				BAE500082FDB495000866315 /* HomeContentView.swift */,
 				BAE500132FDB49B600866315 /* HourlyCellView.swift */,
+				BAE500152FDB4DE800866315 /* HomeToolBarButtns.swift */,
+				BAE500172FDB4E0A00866315 /* HeroSectionView.swift */,
+				BAE500192FDB4E2D00866315 /* HourlyCardView.swift */,
+				BAE5001B2FDB4E6F00866315 /* StatsGridView.swift */,
+				BAE5001D2FDB4E9200866315 /* ForecastSectionView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -510,17 +516,6 @@
 				BAE5FFD92FDB42B200866315 /* FavoritesEmptyView.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		BAE5000A2FDB495C00866315 /* Components */ = {
-			isa = PBXGroup;
-			children = (
-				BAE5000B2FDB496A00866315 /* HomeHeroSection.swift */,
-				BAE5000D2FDB497C00866315 /* HomeHourlySection.swift */,
-				BAE5000F2FDB498B00866315 /* HomeStatsGridView.swift */,
-				BAE500112FDB499D00866315 /* HomeForecastSection.swift */,
-			);
-			path = Components;
 			sourceTree = "<group>";
 		};
 		BAE5FFDF2FDB435C00866315 /* Componets */ = {
@@ -631,6 +626,7 @@
 				BA86B35C2FD35BF60061B10A /* WeatherResponseDTO.swift in Sources */,
 				BAE5FFF62FDB46EA00866315 /* SearchStatesView.swift in Sources */,
 				BA86B3472FD35A9A0061B10A /* Persistence.swift in Sources */,
+				BAE5001C2FDB4E6F00866315 /* StatsGridView.swift in Sources */,
 				BAE5FFDC2FDB431F00866315 /* ForecastViewModel+Appearance.swift in Sources */,
 				BAE500072FDB489800866315 /* HomeViewModel+Helpers.swift in Sources */,
 				BA86B3582FD35BBF0061B10A /* WeatherAPIService.swift in Sources */,
@@ -645,17 +641,15 @@
 				BADACB972FDA28C800AE236D /* LoadingView.swift in Sources */,
 				BAE5FFD82FDB429200866315 /* FavoriteLocationRow.swift in Sources */,
 				BA86B35A2FD35BD80061B10A /* WeatherRepositoryImpl.swift in Sources */,
+				BAE5001E2FDB4E9200866315 /* ForecastSectionView.swift in Sources */,
 				BAE5FFF22FDB46C600866315 /* SearchResultsListView.swift in Sources */,
 				BA86B3252FD3561A0061B10A /* HomeView.swift in Sources */,
-				BAE500122FDB499E00866315 /* HomeForecastSection.swift in Sources */,
-				BAE5000E2FDB497C00866315 /* HomeHourlySection.swift in Sources */,
 				BAE5FFFF2FDB484300866315 /* HomeViewModel+Weather.swift in Sources */,
 				BA86B3502FD35B7A0061B10A /* FetchWeatherUseCase.swift in Sources */,
 				BAE5FFE42FDB43E400866315 /* ForecastHoursListView.swift in Sources */,
 				BADACB952FDA28B600AE236D /* ErrorView.swift in Sources */,
 				BA3224892FD8C27400C2CB83 /* SaveLocationUseCase.swift in Sources */,
 				BA32248D2FD8C2B000C2CB83 /* DeleteLocationUseCase.swift in Sources */,
-				BAE500102FDB498B00866315 /* HomeStatsGridView.swift in Sources */,
 				BAE5FFF92FDB47A400866315 /* SearchSheetContentView.swift in Sources */,
 				BA86B3812FD35BF60061B10A /* ForecastDayEntity.swift in Sources */,
 				BAE5FFEA2FDB449600866315 /* SearchViewModel+Apperance.swift in Sources */,
@@ -673,11 +667,11 @@
 				BA86B34C2FD35B520061B10A /* Config.swift in Sources */,
 				BA3224872FD8C25500C2CB83 /* SearchLocarionUseCase.swift in Sources */,
 				BADACB9B2FDA296F00AE236D /* Color+Hex.swift in Sources */,
-				BAE5000C2FDB496A00866315 /* HomeHeroSection.swift in Sources */,
 				BAE5FFEE2FDB44DB00866315 /* SearchViewModel+Debounce.swift in Sources */,
 				BAE500052FDB487800866315 /* HomeViewModel+Apperance.swift in Sources */,
 				BAE500032FDB486300866315 /* HomeViewModel+ComputedProperties.swift in Sources */,
 				BAE5FFF42FDB46DA00866315 /* SearchSavedListView.swift in Sources */,
+				BAE5001A2FDB4E2D00866315 /* HourlyCardView.swift in Sources */,
 				BADACB992FDA28E700AE236D /* HomeViewModel.swift in Sources */,
 				BAE5FFDE2FDB433E00866315 /* ForecastViewModel+Helpers.swift in Sources */,
 				BA86B3712FD35BF60061B10A /* SearchResultDTO.swift in Sources */,
@@ -687,7 +681,9 @@
 				BAE5FFFD2FDB47C400866315 /* SearchSheetStatesView.swift in Sources */,
 				BA86B3732FD35BF60061B10A /* SavedLocationsRepositoryImpl.swift in Sources */,
 				BAE5FFD62FDB427200866315 /* FavoritesListView.swift in Sources */,
+				BAE500162FDB4DE800866315 /* HomeToolBarButtns.swift in Sources */,
 				BA32248F2FD8C2E300C2CB83 /* DIContainer.swift in Sources */,
+				BAE500182FDB4E0A00866315 /* HeroSectionView.swift in Sources */,
 				BAE5FFF02FDB46B400866315 /* SearchContentView.swift in Sources */,
 				BADACBB32FDA2FF400AE236D /* FavoritesSheetView.swift in Sources */,
 				BA86B3752FD35BF60061B10A /* SavedLocationsRepository.swift in Sources */,

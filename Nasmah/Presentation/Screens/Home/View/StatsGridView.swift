@@ -1,23 +1,22 @@
 //
-//  HomeStatsGridView.swift
+//  StatsGridView.swift
 //  Nasmah
 //
 //  Created by Nemo on 11/06/2026.
 //
-/*
+
 import SwiftUI
 
-struct HomeStatsGridView: View {
+struct StatsGridView: View {
+    @ObservedObject var vm: HomeViewModel
 
-    let vm: HomeViewModel
+    private let columns = [
+        GridItem(.flexible(), spacing: 14),
+        GridItem(.flexible(), spacing: 14)
+    ]
 
     var body: some View {
-
-        LazyVGrid(columns: [
-            GridItem(.flexible()),
-            GridItem(.flexible())
-        ], spacing: 14) {
-
+        LazyVGrid(columns: columns, spacing: 14) {
             WeatherStatCard(
                 icon: "sun.max.fill",
                 title: "UV INDEX",
@@ -27,7 +26,15 @@ struct HomeStatsGridView: View {
                 primaryColor: vm.primaryTextColor,
                 secondaryColor: vm.secondaryTextColor
             )
-
+            WeatherStatCard(
+                icon: "thermometer.medium",
+                title: "FEELS LIKE",
+                value: "\(vm.feelsLike)°",
+                subtitle: "Actual: \(vm.tempInt)°",
+                detail: feelsLikeDetail,
+                primaryColor: vm.primaryTextColor,
+                secondaryColor: vm.secondaryTextColor
+            )
             WeatherStatCard(
                 icon: "wind",
                 title: "WIND",
@@ -37,17 +44,24 @@ struct HomeStatsGridView: View {
                 primaryColor: vm.primaryTextColor,
                 secondaryColor: vm.secondaryTextColor
             )
-
+            WeatherStatCard(
+                icon: "sunset.fill",
+                title: "SUNSET",
+                value: vm.sunsetTime,
+                subtitle: "Sunrise: \(vm.sunriseTime)",
+                detail: nil,
+                primaryColor: vm.primaryTextColor,
+                secondaryColor: vm.secondaryTextColor
+            )
             WeatherStatCard(
                 icon: "drop.fill",
                 title: "HUMIDITY",
                 value: "\(vm.humidityPct)%",
-                subtitle: "Dew: \(vm.dewPointC)°",
+                subtitle: "Dew point: \(vm.dewPointC)°",
                 detail: vm.humidityAdvice,
                 primaryColor: vm.primaryTextColor,
                 secondaryColor: vm.secondaryTextColor
             )
-
             WeatherStatCard(
                 icon: "eye.fill",
                 title: "VISIBILITY",
@@ -60,5 +74,11 @@ struct HomeStatsGridView: View {
         }
         .padding(.horizontal, 16)
     }
+
+    // MARK: - Helpers
+
+    private var feelsLikeDetail: String {
+        if vm.feelsLike == vm.tempInt { return "Feels similar to actual weather." }
+        return vm.feelsLike < vm.tempInt ? "Feels colder than actual." : "Feels warmer than actual."
+    }
 }
-*/
