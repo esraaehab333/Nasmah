@@ -40,6 +40,7 @@ class WeatherRepositoryImpl: WeatherRepository {
             windKph: dto.current.wind_kph,
             uvIndex: dto.current.uv,
             visibilityKm: dto.current.vis_km,
+            pressureMb: dto.current.pressure_mb,
             conditionText: dto.current.condition.text,
             conditionIcon: dto.current.condition.icon,
             conditionCode: dto.current.condition.code
@@ -56,6 +57,7 @@ class WeatherRepositoryImpl: WeatherRepository {
                     windKph: h.wind_kph,
                     visibilityKm: h.vis_km,
                     uvIndex: h.uv,
+                    pressureMb: h.pressure_mb,
                     conditionText: h.condition.text,
                     conditionIcon: h.condition.icon,
                     conditionCode: h.condition.code

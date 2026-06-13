@@ -10,33 +10,23 @@ import SwiftUI
 struct FavoritesListView: View {
     @ObservedObject var vm: SearchViewModel
     let onCitySelected: (String) -> Void
-
+ 
     var body: some View {
         List {
             Section {
                 ForEach(vm.savedLocations, id: \.name) { location in
-                    FavoriteLocationRow(
-                        location: location,
-                        vm: vm
-                    ) {
-                        onCitySelected(
-                            "\(location.latitude),\(location.longitude)"
-                        )
+                    FavoriteLocationRow(location: location, vm: vm) {
+                        onCitySelected("\(location.latitude),\(location.longitude)")
                     }
                 }
-                .onDelete { offsets in
-                    vm.deleteLocation(at: offsets)
-                }
+                .onDelete { vm.deleteLocation(at: $0) }
             } header: {
                 HStack {
                     Image(systemName: "heart.fill")
                         .font(.system(size: 10))
                         .foregroundStyle(vm.accentColor)
-
                     Text("\(vm.savedLocations.count) saved")
-                        .font(.system(size: 12,
-                                      weight: .semibold,
-                                      design: .rounded))
+                        .font(.system(size: 12, weight: .semibold, design: .rounded))
                         .foregroundStyle(vm.secondaryTextColor)
                 }
                 .textCase(nil)

@@ -34,6 +34,12 @@
 		BA86B3832FD35BF60061B10A /* HourEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA86B3822FD35BF60061B10A /* HourEntity.swift */; };
 		BA86B3852FD35BF60061B10A /* SavedLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA86B3842FD35BF60061B10A /* SavedLocation.swift */; };
 		BA86B3872FD35BF60061B10A /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA86B3862FD35BF60061B10A /* SearchResult.swift */; };
+		BA885E5C2FDCD8AC00A04A37 /* SearchResultRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA885E5B2FDCD8AC00A04A37 /* SearchResultRow.swift */; };
+		BA885E5E2FDCD96B00A04A37 /* ForecastSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA885E5D2FDCD96B00A04A37 /* ForecastSectionView.swift */; };
+		BA885E602FDCDA2000A04A37 /* ForecastHourRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA885E5F2FDCDA2000A04A37 /* ForecastHourRow.swift */; };
+		BA885E652FDCDC2A00A04A37 /* SavedLocationRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA885E642FDCDC2A00A04A37 /* SavedLocationRow.swift */; };
+		BA952C7D2FDCE58B00E6F27B /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA952C7C2FDCE58B00E6F27B /* SplashScreenView.swift */; };
+		BAA6E82C2FDC57E0002B0C20 /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA6E82B2FDC57E0002B0C20 /* AppTheme.swift */; };
 		BADACB952FDA28B600AE236D /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADACB942FDA28B600AE236D /* ErrorView.swift */; };
 		BADACB972FDA28C800AE236D /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADACB962FDA28C800AE236D /* LoadingView.swift */; };
 		BADACB992FDA28E700AE236D /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADACB982FDA28E700AE236D /* HomeViewModel.swift */; };
@@ -49,38 +55,19 @@
 		BADACBB92FDA304F00AE236D /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADACBB82FDA304F00AE236D /* SearchView.swift */; };
 		BADACBBB2FDA307C00AE236D /* SearchSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADACBBA2FDA307C00AE236D /* SearchSheetView.swift */; };
 		BADACBC02FDA418600AE236D /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = BADACBBF2FDA418600AE236D /* Alamofire */; };
-		BAE500012FDB485200866315 /* HomeViewModel+AutoRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE500002FDB485200866315 /* HomeViewModel+AutoRefresh.swift */; };
-		BAE500032FDB486300866315 /* HomeViewModel+ComputedProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE500022FDB486300866315 /* HomeViewModel+ComputedProperties.swift */; };
-		BAE500052FDB487800866315 /* HomeViewModel+Apperance.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE500042FDB487800866315 /* HomeViewModel+Apperance.swift */; };
-		BAE500072FDB489800866315 /* HomeViewModel+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE500062FDB489800866315 /* HomeViewModel+Helpers.swift */; };
 		BAE500092FDB495000866315 /* HomeContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE500082FDB495000866315 /* HomeContentView.swift */; };
 		BAE500142FDB49B600866315 /* HourlyCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE500132FDB49B600866315 /* HourlyCellView.swift */; };
 		BAE500162FDB4DE800866315 /* HomeToolBarButtns.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE500152FDB4DE800866315 /* HomeToolBarButtns.swift */; };
 		BAE500182FDB4E0A00866315 /* HeroSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE500172FDB4E0A00866315 /* HeroSectionView.swift */; };
 		BAE5001A2FDB4E2D00866315 /* HourlyCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE500192FDB4E2D00866315 /* HourlyCardView.swift */; };
 		BAE5001C2FDB4E6F00866315 /* StatsGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE5001B2FDB4E6F00866315 /* StatsGridView.swift */; };
-		BAE5001E2FDB4E9200866315 /* ForecastSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE5001D2FDB4E9200866315 /* ForecastSectionView.swift */; };
 		BAE5FFCF2FDB3A0800866315 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE5FFCE2FDB3A0800866315 /* LocationManager.swift */; };
 		BAE5FFD62FDB427200866315 /* FavoritesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE5FFD52FDB427200866315 /* FavoritesListView.swift */; };
 		BAE5FFD82FDB429200866315 /* FavoriteLocationRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE5FFD72FDB429200866315 /* FavoriteLocationRow.swift */; };
 		BAE5FFDA2FDB42B200866315 /* FavoritesEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE5FFD92FDB42B200866315 /* FavoritesEmptyView.swift */; };
-		BAE5FFDC2FDB431F00866315 /* ForecastViewModel+Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE5FFDB2FDB431F00866315 /* ForecastViewModel+Appearance.swift */; };
-		BAE5FFDE2FDB433E00866315 /* ForecastViewModel+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE5FFDD2FDB433E00866315 /* ForecastViewModel+Helpers.swift */; };
 		BAE5FFE22FDB43D400866315 /* ForecastContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE5FFE12FDB43D400866315 /* ForecastContentView.swift */; };
 		BAE5FFE42FDB43E400866315 /* ForecastHoursListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE5FFE32FDB43E400866315 /* ForecastHoursListView.swift */; };
 		BAE5FFE62FDB43F300866315 /* ForecastEmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE5FFE52FDB43F300866315 /* ForecastEmptyStateView.swift */; };
-		BAE5FFE82FDB446900866315 /* SearchViewModel+Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE5FFE72FDB446900866315 /* SearchViewModel+Search.swift */; };
-		BAE5FFEA2FDB449600866315 /* SearchViewModel+Apperance.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE5FFE92FDB449600866315 /* SearchViewModel+Apperance.swift */; };
-		BAE5FFEC2FDB44B200866315 /* SearchViewModel+SavedLocations.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE5FFEB2FDB44B200866315 /* SearchViewModel+SavedLocations.swift */; };
-		BAE5FFEE2FDB44DB00866315 /* SearchViewModel+Debounce.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE5FFED2FDB44DB00866315 /* SearchViewModel+Debounce.swift */; };
-		BAE5FFF02FDB46B400866315 /* SearchContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE5FFEF2FDB46B400866315 /* SearchContentView.swift */; };
-		BAE5FFF22FDB46C600866315 /* SearchResultsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE5FFF12FDB46C600866315 /* SearchResultsListView.swift */; };
-		BAE5FFF42FDB46DA00866315 /* SearchSavedListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE5FFF32FDB46DA00866315 /* SearchSavedListView.swift */; };
-		BAE5FFF62FDB46EA00866315 /* SearchStatesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE5FFF52FDB46EA00866315 /* SearchStatesView.swift */; };
-		BAE5FFF92FDB47A400866315 /* SearchSheetContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE5FFF82FDB47A400866315 /* SearchSheetContentView.swift */; };
-		BAE5FFFB2FDB47B400866315 /* SearchSheetResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE5FFFA2FDB47B400866315 /* SearchSheetResultsView.swift */; };
-		BAE5FFFD2FDB47C400866315 /* SearchSheetStatesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE5FFFC2FDB47C400866315 /* SearchSheetStatesView.swift */; };
-		BAE5FFFF2FDB484300866315 /* HomeViewModel+Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE5FFFE2FDB484300866315 /* HomeViewModel+Weather.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -112,6 +99,12 @@
 		BA86B3822FD35BF60061B10A /* HourEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourEntity.swift; sourceTree = "<group>"; };
 		BA86B3842FD35BF60061B10A /* SavedLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedLocation.swift; sourceTree = "<group>"; };
 		BA86B3862FD35BF60061B10A /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
+		BA885E5B2FDCD8AC00A04A37 /* SearchResultRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultRow.swift; sourceTree = "<group>"; };
+		BA885E5D2FDCD96B00A04A37 /* ForecastSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastSectionView.swift; sourceTree = "<group>"; };
+		BA885E5F2FDCDA2000A04A37 /* ForecastHourRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastHourRow.swift; sourceTree = "<group>"; };
+		BA885E642FDCDC2A00A04A37 /* SavedLocationRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedLocationRow.swift; sourceTree = "<group>"; };
+		BA952C7C2FDCE58B00E6F27B /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+		BAA6E82B2FDC57E0002B0C20 /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
 		BADACB942FDA28B600AE236D /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		BADACB962FDA28C800AE236D /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		BADACB982FDA28E700AE236D /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
@@ -126,39 +119,20 @@
 		BADACBB62FDA303200AE236D /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		BADACBB82FDA304F00AE236D /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		BADACBBA2FDA307C00AE236D /* SearchSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchSheetView.swift; sourceTree = "<group>"; };
-		BAE500002FDB485200866315 /* HomeViewModel+AutoRefresh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewModel+AutoRefresh.swift"; sourceTree = "<group>"; };
-		BAE500022FDB486300866315 /* HomeViewModel+ComputedProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewModel+ComputedProperties.swift"; sourceTree = "<group>"; };
-		BAE500042FDB487800866315 /* HomeViewModel+Apperance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewModel+Apperance.swift"; sourceTree = "<group>"; };
-		BAE500062FDB489800866315 /* HomeViewModel+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewModel+Helpers.swift"; sourceTree = "<group>"; };
 		BAE500082FDB495000866315 /* HomeContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeContentView.swift; sourceTree = "<group>"; };
 		BAE500132FDB49B600866315 /* HourlyCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyCellView.swift; sourceTree = "<group>"; };
 		BAE500152FDB4DE800866315 /* HomeToolBarButtns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeToolBarButtns.swift; sourceTree = "<group>"; };
 		BAE500172FDB4E0A00866315 /* HeroSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroSectionView.swift; sourceTree = "<group>"; };
 		BAE500192FDB4E2D00866315 /* HourlyCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyCardView.swift; sourceTree = "<group>"; };
 		BAE5001B2FDB4E6F00866315 /* StatsGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsGridView.swift; sourceTree = "<group>"; };
-		BAE5001D2FDB4E9200866315 /* ForecastSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastSectionView.swift; sourceTree = "<group>"; };
 		BAE5FFCE2FDB3A0800866315 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		BAE5FFD02FDB3C5500866315 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		BAE5FFD52FDB427200866315 /* FavoritesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListView.swift; sourceTree = "<group>"; };
 		BAE5FFD72FDB429200866315 /* FavoriteLocationRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteLocationRow.swift; sourceTree = "<group>"; };
 		BAE5FFD92FDB42B200866315 /* FavoritesEmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesEmptyView.swift; sourceTree = "<group>"; };
-		BAE5FFDB2FDB431F00866315 /* ForecastViewModel+Appearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ForecastViewModel+Appearance.swift"; sourceTree = "<group>"; };
-		BAE5FFDD2FDB433E00866315 /* ForecastViewModel+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ForecastViewModel+Helpers.swift"; sourceTree = "<group>"; };
 		BAE5FFE12FDB43D400866315 /* ForecastContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastContentView.swift; sourceTree = "<group>"; };
 		BAE5FFE32FDB43E400866315 /* ForecastHoursListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastHoursListView.swift; sourceTree = "<group>"; };
 		BAE5FFE52FDB43F300866315 /* ForecastEmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastEmptyStateView.swift; sourceTree = "<group>"; };
-		BAE5FFE72FDB446900866315 /* SearchViewModel+Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchViewModel+Search.swift"; sourceTree = "<group>"; };
-		BAE5FFE92FDB449600866315 /* SearchViewModel+Apperance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchViewModel+Apperance.swift"; sourceTree = "<group>"; };
-		BAE5FFEB2FDB44B200866315 /* SearchViewModel+SavedLocations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchViewModel+SavedLocations.swift"; sourceTree = "<group>"; };
-		BAE5FFED2FDB44DB00866315 /* SearchViewModel+Debounce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchViewModel+Debounce.swift"; sourceTree = "<group>"; };
-		BAE5FFEF2FDB46B400866315 /* SearchContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchContentView.swift; sourceTree = "<group>"; };
-		BAE5FFF12FDB46C600866315 /* SearchResultsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsListView.swift; sourceTree = "<group>"; };
-		BAE5FFF32FDB46DA00866315 /* SearchSavedListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchSavedListView.swift; sourceTree = "<group>"; };
-		BAE5FFF52FDB46EA00866315 /* SearchStatesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchStatesView.swift; sourceTree = "<group>"; };
-		BAE5FFF82FDB47A400866315 /* SearchSheetContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchSheetContentView.swift; sourceTree = "<group>"; };
-		BAE5FFFA2FDB47B400866315 /* SearchSheetResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchSheetResultsView.swift; sourceTree = "<group>"; };
-		BAE5FFFC2FDB47C400866315 /* SearchSheetStatesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchSheetStatesView.swift; sourceTree = "<group>"; };
-		BAE5FFFE2FDB484300866315 /* HomeViewModel+Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewModel+Weather.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -244,6 +218,7 @@
 				BA32248E2FD8C2E300C2CB83 /* DIContainer.swift */,
 				BADACB9A2FDA296F00AE236D /* Color+Hex.swift */,
 				BAE5FFCE2FDB3A0800866315 /* LocationManager.swift */,
+				BAA6E82B2FDC57E0002B0C20 /* AppTheme.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -284,6 +259,7 @@
 				BADACBA52FDA2DD000AE236D /* Forecast */,
 				BADACBA42FDA2DC800AE236D /* Search */,
 				BA86B3232FD356020061B10A /* Home */,
+				BA952C7C2FDCE58B00E6F27B /* SplashScreenView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -291,6 +267,8 @@
 		BA86B3202FD3558D0061B10A /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				BADACB962FDA28C800AE236D /* LoadingView.swift */,
+				BADACB942FDA28B600AE236D /* ErrorView.swift */,
 				BADACB9E2FDA2A0200AE236D /* HourlyRowView.swift */,
 				BADACBA22FDA2A3A00AE236D /* WeatherStatCard.swift */,
 			);
@@ -404,15 +382,12 @@
 			isa = PBXGroup;
 			children = (
 				BA86B3242FD3561A0061B10A /* HomeView.swift */,
-				BADACB942FDA28B600AE236D /* ErrorView.swift */,
-				BADACB962FDA28C800AE236D /* LoadingView.swift */,
 				BAE500082FDB495000866315 /* HomeContentView.swift */,
 				BAE500132FDB49B600866315 /* HourlyCellView.swift */,
 				BAE500152FDB4DE800866315 /* HomeToolBarButtns.swift */,
 				BAE500172FDB4E0A00866315 /* HeroSectionView.swift */,
 				BAE500192FDB4E2D00866315 /* HourlyCardView.swift */,
 				BAE5001B2FDB4E6F00866315 /* StatsGridView.swift */,
-				BAE5001D2FDB4E9200866315 /* ForecastSectionView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -421,11 +396,6 @@
 			isa = PBXGroup;
 			children = (
 				BADACB982FDA28E700AE236D /* HomeViewModel.swift */,
-				BAE5FFFE2FDB484300866315 /* HomeViewModel+Weather.swift */,
-				BAE500002FDB485200866315 /* HomeViewModel+AutoRefresh.swift */,
-				BAE500022FDB486300866315 /* HomeViewModel+ComputedProperties.swift */,
-				BAE500042FDB487800866315 /* HomeViewModel+Apperance.swift */,
-				BAE500062FDB489800866315 /* HomeViewModel+Helpers.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -455,13 +425,8 @@
 			children = (
 				BADACBB82FDA304F00AE236D /* SearchView.swift */,
 				BADACBBA2FDA307C00AE236D /* SearchSheetView.swift */,
-				BAE5FFEF2FDB46B400866315 /* SearchContentView.swift */,
-				BAE5FFF12FDB46C600866315 /* SearchResultsListView.swift */,
-				BAE5FFF32FDB46DA00866315 /* SearchSavedListView.swift */,
-				BAE5FFF52FDB46EA00866315 /* SearchStatesView.swift */,
-				BAE5FFF82FDB47A400866315 /* SearchSheetContentView.swift */,
-				BAE5FFFA2FDB47B400866315 /* SearchSheetResultsView.swift */,
-				BAE5FFFC2FDB47C400866315 /* SearchSheetStatesView.swift */,
+				BA885E5B2FDCD8AC00A04A37 /* SearchResultRow.swift */,
+				BA885E642FDCDC2A00A04A37 /* SavedLocationRow.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -470,10 +435,6 @@
 			isa = PBXGroup;
 			children = (
 				BADACBB62FDA303200AE236D /* SearchViewModel.swift */,
-				BAE5FFE72FDB446900866315 /* SearchViewModel+Search.swift */,
-				BAE5FFE92FDB449600866315 /* SearchViewModel+Apperance.swift */,
-				BAE5FFEB2FDB44B200866315 /* SearchViewModel+SavedLocations.swift */,
-				BAE5FFED2FDB44DB00866315 /* SearchViewModel+Debounce.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -485,6 +446,7 @@
 				BAE5FFE12FDB43D400866315 /* ForecastContentView.swift */,
 				BAE5FFE32FDB43E400866315 /* ForecastHoursListView.swift */,
 				BAE5FFE52FDB43F300866315 /* ForecastEmptyStateView.swift */,
+				BA885E5D2FDCD96B00A04A37 /* ForecastSectionView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -493,8 +455,6 @@
 			isa = PBXGroup;
 			children = (
 				BADACBAC2FDA2E3800AE236D /* ForecastViewModel.swift */,
-				BAE5FFDB2FDB431F00866315 /* ForecastViewModel+Appearance.swift */,
-				BAE5FFDD2FDB433E00866315 /* ForecastViewModel+Helpers.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -522,6 +482,7 @@
 			isa = PBXGroup;
 			children = (
 				BADACB9C2FDA29F000AE236D /* ForecastRowView.swift */,
+				BA885E5F2FDCDA2000A04A37 /* ForecastHourRow.swift */,
 			);
 			path = Componets;
 			sourceTree = "<group>";
@@ -623,37 +584,33 @@
 				BA86B3522FD35B8B0061B10A /* WeatherRepository.swift in Sources */,
 				BADACBAB2FDA2E1100AE236D /* ForecastView.swift in Sources */,
 				BADACBB72FDA303200AE236D /* SearchViewModel.swift in Sources */,
+				BA885E652FDCDC2A00A04A37 /* SavedLocationRow.swift in Sources */,
 				BA86B35C2FD35BF60061B10A /* WeatherResponseDTO.swift in Sources */,
-				BAE5FFF62FDB46EA00866315 /* SearchStatesView.swift in Sources */,
 				BA86B3472FD35A9A0061B10A /* Persistence.swift in Sources */,
 				BAE5001C2FDB4E6F00866315 /* StatsGridView.swift in Sources */,
-				BAE5FFDC2FDB431F00866315 /* ForecastViewModel+Appearance.swift in Sources */,
-				BAE500072FDB489800866315 /* HomeViewModel+Helpers.swift in Sources */,
+				BA885E5E2FDCD96B00A04A37 /* ForecastSectionView.swift in Sources */,
 				BA86B3582FD35BBF0061B10A /* WeatherAPIService.swift in Sources */,
+				BAA6E82C2FDC57E0002B0C20 /* AppTheme.swift in Sources */,
 				BA32248B2FD8C29700C2CB83 /* FetchSavedLocationsUseCase.swift in Sources */,
 				BAE5FFDA2FDB42B200866315 /* FavoritesEmptyView.swift in Sources */,
 				BAE500092FDB495000866315 /* HomeContentView.swift in Sources */,
 				BA86B34A2FD35AC80061B10A /* Nasmah.xcdatamodeld in Sources */,
 				BA86B3042FD353790061B10A /* NasmahApp.swift in Sources */,
 				BA86B3542FD35B9C0061B10A /* WeatherEntity.swift in Sources */,
-				BAE5FFE82FDB446900866315 /* SearchViewModel+Search.swift in Sources */,
 				BAE5FFCF2FDB3A0800866315 /* LocationManager.swift in Sources */,
 				BADACB972FDA28C800AE236D /* LoadingView.swift in Sources */,
 				BAE5FFD82FDB429200866315 /* FavoriteLocationRow.swift in Sources */,
 				BA86B35A2FD35BD80061B10A /* WeatherRepositoryImpl.swift in Sources */,
-				BAE5001E2FDB4E9200866315 /* ForecastSectionView.swift in Sources */,
-				BAE5FFF22FDB46C600866315 /* SearchResultsListView.swift in Sources */,
 				BA86B3252FD3561A0061B10A /* HomeView.swift in Sources */,
-				BAE5FFFF2FDB484300866315 /* HomeViewModel+Weather.swift in Sources */,
 				BA86B3502FD35B7A0061B10A /* FetchWeatherUseCase.swift in Sources */,
 				BAE5FFE42FDB43E400866315 /* ForecastHoursListView.swift in Sources */,
 				BADACB952FDA28B600AE236D /* ErrorView.swift in Sources */,
 				BA3224892FD8C27400C2CB83 /* SaveLocationUseCase.swift in Sources */,
 				BA32248D2FD8C2B000C2CB83 /* DeleteLocationUseCase.swift in Sources */,
-				BAE5FFF92FDB47A400866315 /* SearchSheetContentView.swift in Sources */,
 				BA86B3812FD35BF60061B10A /* ForecastDayEntity.swift in Sources */,
-				BAE5FFEA2FDB449600866315 /* SearchViewModel+Apperance.swift in Sources */,
+				BA885E5C2FDCD8AC00A04A37 /* SearchResultRow.swift in Sources */,
 				BA86B3832FD35BF60061B10A /* HourEntity.swift in Sources */,
+				BA952C7D2FDCE58B00E6F27B /* SplashScreenView.swift in Sources */,
 				BA86B3852FD35BF60061B10A /* SavedLocation.swift in Sources */,
 				BA86B3872FD35BF60061B10A /* SearchResult.swift in Sources */,
 				BADACBAD2FDA2E3800AE236D /* ForecastViewModel.swift in Sources */,
@@ -661,34 +618,25 @@
 				BADACBBB2FDA307C00AE236D /* SearchSheetView.swift in Sources */,
 				BA3224912FD8C33600C2CB83 /* FetchForecastHoursUseCase.swift in Sources */,
 				BAE500142FDB49B600866315 /* HourlyCellView.swift in Sources */,
-				BAE5FFFB2FDB47B400866315 /* SearchSheetResultsView.swift in Sources */,
 				BAE5FFE22FDB43D400866315 /* ForecastContentView.swift in Sources */,
 				BADACBA32FDA2A3A00AE236D /* WeatherStatCard.swift in Sources */,
 				BA86B34C2FD35B520061B10A /* Config.swift in Sources */,
 				BA3224872FD8C25500C2CB83 /* SearchLocarionUseCase.swift in Sources */,
+				BA885E602FDCDA2000A04A37 /* ForecastHourRow.swift in Sources */,
 				BADACB9B2FDA296F00AE236D /* Color+Hex.swift in Sources */,
-				BAE5FFEE2FDB44DB00866315 /* SearchViewModel+Debounce.swift in Sources */,
-				BAE500052FDB487800866315 /* HomeViewModel+Apperance.swift in Sources */,
-				BAE500032FDB486300866315 /* HomeViewModel+ComputedProperties.swift in Sources */,
-				BAE5FFF42FDB46DA00866315 /* SearchSavedListView.swift in Sources */,
 				BAE5001A2FDB4E2D00866315 /* HourlyCardView.swift in Sources */,
 				BADACB992FDA28E700AE236D /* HomeViewModel.swift in Sources */,
-				BAE5FFDE2FDB433E00866315 /* ForecastViewModel+Helpers.swift in Sources */,
 				BA86B3712FD35BF60061B10A /* SearchResultDTO.swift in Sources */,
 				BADACB9F2FDA2A0200AE236D /* HourlyRowView.swift in Sources */,
 				BAE5FFE62FDB43F300866315 /* ForecastEmptyStateView.swift in Sources */,
 				BADACBB92FDA304F00AE236D /* SearchView.swift in Sources */,
-				BAE5FFFD2FDB47C400866315 /* SearchSheetStatesView.swift in Sources */,
 				BA86B3732FD35BF60061B10A /* SavedLocationsRepositoryImpl.swift in Sources */,
 				BAE5FFD62FDB427200866315 /* FavoritesListView.swift in Sources */,
 				BAE500162FDB4DE800866315 /* HomeToolBarButtns.swift in Sources */,
 				BA32248F2FD8C2E300C2CB83 /* DIContainer.swift in Sources */,
 				BAE500182FDB4E0A00866315 /* HeroSectionView.swift in Sources */,
-				BAE5FFF02FDB46B400866315 /* SearchContentView.swift in Sources */,
 				BADACBB32FDA2FF400AE236D /* FavoritesSheetView.swift in Sources */,
 				BA86B3752FD35BF60061B10A /* SavedLocationsRepository.swift in Sources */,
-				BAE5FFEC2FDB44B200866315 /* SearchViewModel+SavedLocations.swift in Sources */,
-				BAE500012FDB485200866315 /* HomeViewModel+AutoRefresh.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

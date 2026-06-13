@@ -10,10 +10,10 @@ import SwiftUI
 @main
 struct NasmahApp: App {
     let persistenceController = PersistenceController.shared
-
+ 
     var body: some Scene {
         WindowGroup {
-            HomeView()
+            SplashScreenView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }

@@ -5,14 +5,13 @@
 //  Created by Nemo on 11/06/2026.
 //
 
-
 import SwiftUI
 
 struct ForecastSectionView: View {
     @ObservedObject var vm: HomeViewModel
     @Binding var selectedDayIndex: Int
     @Binding var navigateToForecast: Bool
-
+ 
     var body: some View {
         VStack(spacing: 0) {
             ForEach(0..<3) { index in
@@ -28,7 +27,7 @@ struct ForecastSectionView: View {
                             secondaryColor: vm.secondaryTextColor
                         )
                     }
-
+ 
                     if index < 2 {
                         Divider()
                             .background(vm.primaryTextColor.opacity(0.12))

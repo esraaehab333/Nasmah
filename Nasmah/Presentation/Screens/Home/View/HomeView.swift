@@ -14,21 +14,21 @@ struct HomeView: View {
     @State private var selectedDayIndex: Int = 0
     @State private var showSearch = false
     @State private var showFavorites = false
-
+ 
     init(city: String = "Cairo") {
         _vm = StateObject(wrappedValue: HomeViewModel(city: city))
     }
-
+ 
     var body: some View {
         GeometryReader { geometry in
             let screenHeight = geometry.size.height
-            let heroHeight = screenHeight * 0.70
-
+            let heroHeight   = screenHeight * 0.70
+ 
             NavigationStack {
                 ZStack(alignment: .top) {
                     vm.backgroundColor
                         .ignoresSafeArea()
-
+ 
                     if !vm.isLoading && vm.errorMessage == nil {
                         Image(vm.backgroundImage)
                             .resizable()
@@ -37,7 +37,7 @@ struct HomeView: View {
                             .clipped()
                             .ignoresSafeArea(edges: .top)
                     }
-
+ 
                     if vm.isLoading {
                         LoadingView(tint: vm.primaryTextColor)
                     } else if let error = vm.errorMessage {
@@ -59,7 +59,7 @@ struct HomeView: View {
                         HomeToolbarButtons(
                             primaryColor: vm.primaryTextColor,
                             onFavorites: { showFavorites = true },
-                            onSearch: { showSearch = true }
+                            onSearch:    { showSearch = true }
                         )
                     }
                 }
@@ -86,15 +86,16 @@ struct HomeView: View {
                         )
                     }
                 }
+                // Pass the current condition code so sheets match home theme
                 .sheet(isPresented: $showSearch) {
-                    SearchSheetView { city in
+                    SearchSheetView(conditionCode: vm.weather?.current.conditionCode) { city in
                         showSearch = false
                         vm.updateCity(city)
                         Task { await vm.loadWeather() }
                     }
                 }
                 .sheet(isPresented: $showFavorites) {
-                    FavoritesSheetView { city in
+                    FavoritesSheetView(conditionCode: vm.weather?.current.conditionCode) { city in
                         showFavorites = false
                         vm.updateCity(city)
                         Task { await vm.loadWeather() }

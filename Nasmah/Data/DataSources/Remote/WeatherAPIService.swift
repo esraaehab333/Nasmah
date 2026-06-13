@@ -53,8 +53,8 @@ class WeatherAPIServiceImpl: WeatherAPIService {
                     case .success(let dto):
                         continuation.resume(returning: dto)
                     case .failure(let error):
-                        if let underlyingError = error.underlyingError as? DecodingError {
-                            continuation.resume(throwing: WeatherAPIError.decodingError(underlyingError))
+                        if let underlying = error.underlyingError as? DecodingError {
+                            continuation.resume(throwing: WeatherAPIError.decodingError(underlying))
                         } else if response.response == nil {
                             continuation.resume(throwing: WeatherAPIError.invalidURL)
                         } else {

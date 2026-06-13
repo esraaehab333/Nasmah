@@ -26,17 +26,17 @@ struct WeatherStatCard: View {
                     .tracking(0.5)
             }
             .foregroundStyle(secondaryColor)
-
+ 
             Text(value)
                 .font(.system(size: 26, weight: .bold, design: .rounded))
                 .foregroundStyle(primaryColor)
-
+ 
             if let subtitle {
                 Text(subtitle)
                     .font(.system(size: 13, weight: .semibold))
                     .foregroundStyle(primaryColor.opacity(0.8))
             }
-            
+ 
             if let detail {
                 Spacer(minLength: 4)
                 Text(detail)

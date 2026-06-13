@@ -16,6 +16,7 @@ struct HourEntity {
     let windKph: Double
     let visibilityKm: Double
     let uvIndex: Double
+    let pressureMb: Double        
     let conditionText: String
     let conditionIcon: String
     let conditionCode: Int

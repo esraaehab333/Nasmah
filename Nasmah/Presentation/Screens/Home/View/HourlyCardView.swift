@@ -10,7 +10,7 @@ import SwiftUI
 
 struct HourlyCardView: View {
     @ObservedObject var vm: HomeViewModel
-
+ 
     var body: some View {
         VStack(alignment: .leading, spacing: 16) {
             HStack {
@@ -21,7 +21,7 @@ struct HourlyCardView: View {
                     .tracking(1)
             }
             .foregroundStyle(vm.secondaryTextColor)
-
+ 
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 22) {
                     ForEach(vm.weather?.forecast.first?.hours.prefix(8) ?? [], id: \.time) { hour in

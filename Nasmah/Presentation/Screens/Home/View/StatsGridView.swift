@@ -7,16 +7,19 @@
 
 import SwiftUI
 
+import SwiftUI
+ 
 struct StatsGridView: View {
     @ObservedObject var vm: HomeViewModel
-
+ 
     private let columns = [
         GridItem(.flexible(), spacing: 14),
         GridItem(.flexible(), spacing: 14)
     ]
-
+ 
     var body: some View {
         LazyVGrid(columns: columns, spacing: 14) {
+ 
             WeatherStatCard(
                 icon: "sun.max.fill",
                 title: "UV INDEX",
@@ -26,6 +29,7 @@ struct StatsGridView: View {
                 primaryColor: vm.primaryTextColor,
                 secondaryColor: vm.secondaryTextColor
             )
+ 
             WeatherStatCard(
                 icon: "thermometer.medium",
                 title: "FEELS LIKE",
@@ -35,15 +39,7 @@ struct StatsGridView: View {
                 primaryColor: vm.primaryTextColor,
                 secondaryColor: vm.secondaryTextColor
             )
-            WeatherStatCard(
-                icon: "wind",
-                title: "WIND",
-                value: "\(vm.windKmh) km/h",
-                subtitle: nil,
-                detail: vm.windDescription,
-                primaryColor: vm.primaryTextColor,
-                secondaryColor: vm.secondaryTextColor
-            )
+ 
             WeatherStatCard(
                 icon: "sunset.fill",
                 title: "SUNSET",
@@ -53,6 +49,7 @@ struct StatsGridView: View {
                 primaryColor: vm.primaryTextColor,
                 secondaryColor: vm.secondaryTextColor
             )
+ 
             WeatherStatCard(
                 icon: "drop.fill",
                 title: "HUMIDITY",
@@ -62,6 +59,7 @@ struct StatsGridView: View {
                 primaryColor: vm.primaryTextColor,
                 secondaryColor: vm.secondaryTextColor
             )
+ 
             WeatherStatCard(
                 icon: "eye.fill",
                 title: "VISIBILITY",
@@ -71,12 +69,19 @@ struct StatsGridView: View {
                 primaryColor: vm.primaryTextColor,
                 secondaryColor: vm.secondaryTextColor
             )
+            WeatherStatCard(
+                icon: "gauge.with.dots.needle.67percent",
+                title: "PRESSURE",
+                value: "\(vm.pressureMb) mb",
+                subtitle: vm.pressureLabel,
+                detail: vm.pressureAdvice,
+                primaryColor: vm.primaryTextColor,
+                secondaryColor: vm.secondaryTextColor
+            )
         }
         .padding(.horizontal, 16)
     }
-
-    // MARK: - Helpers
-
+ 
     private var feelsLikeDetail: String {
         if vm.feelsLike == vm.tempInt { return "Feels similar to actual weather." }
         return vm.feelsLike < vm.tempInt ? "Feels colder than actual." : "Feels warmer than actual."

@@ -28,6 +28,7 @@ struct CurrentDTO: Codable {
     let wind_kph: Double
     let uv: Double
     let vis_km: Double
+    let pressure_mb: Double
     let condition: ConditionDTO
 }
 
@@ -68,6 +69,7 @@ struct HourDTO: Codable {
     let wind_kph: Double
     let vis_km: Double
     let uv: Double
+    let pressure_mb: Double
     let condition: ConditionDTO
 }
 

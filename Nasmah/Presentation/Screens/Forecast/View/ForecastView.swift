@@ -8,14 +8,9 @@
 import SwiftUI
 
 struct ForecastView: View {
-
     @StateObject private var vm: ForecastViewModel
-
-    init(
-        forecast: ForecastDayEntity,
-        dayIndex: Int,
-        dayLabel: String
-    ) {
+ 
+    init(forecast: ForecastDayEntity, dayIndex: Int, dayLabel: String) {
         _vm = StateObject(
             wrappedValue: ForecastViewModel(
                 forecast: forecast,
@@ -24,12 +19,11 @@ struct ForecastView: View {
             )
         )
     }
-
+ 
     var body: some View {
         ZStack {
             vm.backgroundColor
                 .ignoresSafeArea()
-
             ForecastContentView(vm: vm)
         }
         .navigationTitle(vm.navigationTitle)
@@ -37,8 +31,6 @@ struct ForecastView: View {
         .toolbarColorScheme(.dark, for: .navigationBar)
         .toolbarBackground(vm.backgroundColor, for: .navigationBar)
         .toolbarBackground(.visible, for: .navigationBar)
-        .onAppear {
-            vm.onAppear()
-        }
+        .onAppear { vm.onAppear() }
     }
 }

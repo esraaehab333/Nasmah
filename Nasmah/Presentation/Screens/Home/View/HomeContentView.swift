@@ -12,16 +12,13 @@ struct HomeContentView: View {
     let heroHeight: CGFloat
     @Binding var selectedDayIndex: Int
     @Binding var navigateToForecast: Bool
-
+ 
     var body: some View {
         ScrollView(showsIndicators: false) {
             VStack(spacing: 20) {
                 HeroSectionView(vm: vm, heroHeight: heroHeight)
-
                 HourlyCardView(vm: vm)
-
                 StatsGridView(vm: vm)
-
                 ForecastSectionView(
                     vm: vm,
                     selectedDayIndex: $selectedDayIndex,

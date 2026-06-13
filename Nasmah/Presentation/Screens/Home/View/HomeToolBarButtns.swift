@@ -11,7 +11,7 @@ struct HomeToolbarButtons: View {
     let primaryColor: Color
     let onFavorites: () -> Void
     let onSearch: () -> Void
-
+ 
     var body: some View {
         HStack(spacing: 18) {
             Button(action: onFavorites) {
