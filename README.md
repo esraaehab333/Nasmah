@@ -158,22 +158,4 @@ All colors flow from a single `AppTheme` struct. The condition code from the Wea
 
 Search and Favorites sheets receive the same condition code from `HomeViewModel` so they always match the home screen theme.
 
----
 
-## API Key Security
-
-The API key is currently stored in `Config.swift` as a plain string. For production:
-- Store it in a `.xcconfig` file excluded from version control
-- Or use a backend proxy so the key is never shipped in the binary
-
-Add `Config.swift` to `.gitignore` if you fork this repo publicly.
-
----
-
-## License
-
-MIT — do whatever you want with it.
-
----
-
-*Built by Nemo · June 2026*
